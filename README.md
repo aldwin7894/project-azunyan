@@ -1,5 +1,5 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aldwin7894:project-cyan&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aldwin7894:project-cyan)
-[![CodeQL](https://github.com/aldwin7894/project-cyan/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/aldwin7894/project-cyan/actions/workflows/codeql-analysis.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aldwin7894_project-azunyan&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aldwin7894_project-azunyan)
+[![CodeQL](https://github.com/aldwin7894/project-azunyan/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/aldwin7894/project-azunyan/actions/workflows/github-code-scanning/codeql)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
