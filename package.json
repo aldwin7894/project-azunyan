@@ -19,7 +19,7 @@
     "react-dom": "^18",
     "simple-zustand-devtools": "^1.1.0",
     "urql": "^4.0.6",
-    "zustand": "^4.4.6"
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@types/node": "^20",
