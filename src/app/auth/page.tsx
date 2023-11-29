@@ -15,11 +15,12 @@ export default function Auth() {
 
       if (access_token) {
         run.current = true;
-        await fetch("/api/al-auth", {
+        await fetch("/api/session", {
           method: "POST",
           body: JSON.stringify({ access_token }),
         });
         router.replace("/");
+        router.refresh();
       }
     };
 

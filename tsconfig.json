@@ -33,7 +33,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "relay.config.js"
   ],
   "exclude": [
     "node_modules"

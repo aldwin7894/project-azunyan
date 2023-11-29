@@ -13,7 +13,7 @@ export const useThemeStore = create(
       theme: get()?.theme || "dark",
       toggleTheme: () => {
         set(state => ({
-          theme: state.theme === "light" ? "dark" : "light",
+          theme: state.theme === "cupcake" ? "dark" : "cupcake",
         }));
       },
     }),

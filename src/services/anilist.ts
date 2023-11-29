@@ -40,10 +40,12 @@ export const saveUser = async (accessToken: string) => {
     .toPromise();
 
   return await UserSchema.findOneAndUpdate(
-    { "al_user_details.id": ALUser.data.Viewer.id },
+    { "anilist.account_details.id": ALUser.data.Viewer.id },
     {
-      al_access_token: accessToken,
-      al_user_details: { ...ALUser.data.Viewer },
+      anilist: {
+        access_token: accessToken,
+        account_details: { ...ALUser.data.Viewer },
+      },
     },
     { upsert: true, new: true },
   );
