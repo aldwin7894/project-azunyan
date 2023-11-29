@@ -34,6 +34,7 @@ export const UserAnimeListQuery = gql`
     mediaId
     status
     progress
+    score
     media {
       id
       type

@@ -10,6 +10,7 @@ export type AnimeList = {
             mediaId: number;
             status: string;
             progress: number;
+            score: number;
             media: {
               id: number;
               type: string;
