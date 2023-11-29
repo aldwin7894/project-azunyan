@@ -1,11 +1,9 @@
-"use client";
-
-import useTheme from "@/hooks/useTheme";
+import AnimeList from "@/components/Home/AnimeList";
 
 export default function Home() {
-  useTheme();
-
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24"></div>
+    <div className="flex min-h-screen w-full flex-col pt-5">
+      <AnimeList />
+    </div>
   );
 }

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Header from "@/components/common/Header";
+import Theme from "@/components/common/Theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Theme />
         <Header />
-        <main className="container">{children}</main>
+        <main className="container overflow-x-auto overflow-y-hidden">
+          {children}
+        </main>
       </body>
     </html>
   );

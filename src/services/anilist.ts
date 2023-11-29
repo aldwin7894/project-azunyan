@@ -28,6 +28,48 @@ export const ViewerQuery = gql`
     }
   }
 `;
+export const UserAnimeListQuery = gql`
+  fragment mediaListEntry on MediaList {
+    id
+    mediaId
+    status
+    progress
+    media {
+      id
+      type
+      title {
+        userPreferred
+      }
+      coverImage {
+        large
+      }
+      status(version: 2)
+      episodes
+    }
+  }
+  fragment Lists on MediaListCollection {
+    hasNextChunk
+    lists {
+      name
+      entries {
+        ...mediaListEntry
+      }
+    }
+  }
+
+  query UserAnimeList($userId: Int) {
+    Watching: MediaListCollection(
+      userId: $userId
+      type: ANIME
+      perChunk: 500
+      chunk: 1
+      status: CURRENT
+      sort: UPDATED_TIME_DESC
+    ) {
+      ...Lists
+    }
+  }
+`;
 
 export const getUserByAccessToken = async (accessToken: string) => {
   return await UserSchema.findOne({
