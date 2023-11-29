@@ -6,9 +6,12 @@ import React from "react";
 export default function UserMenu() {
   const router = useRouter();
   const handleLogout = async () => {
+    (document.activeElement as HTMLElement | null)?.blur();
+
     await fetch("/api/session", {
       method: "DELETE",
     });
+    router.replace("/");
     router.refresh();
   };
 

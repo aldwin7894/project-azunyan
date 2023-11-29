@@ -12,6 +12,8 @@ export default async function AnimeList() {
     ttl: 0,
   });
 
+  if (!session?.anilist?.access_token) return;
+
   const data = await AnilistClient(session.anilist.access_token)
     .query<AnimeList>(UserAnimeListQuery, {
       userId: session.anilist.account_details.id,

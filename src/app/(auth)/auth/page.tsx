@@ -9,19 +9,20 @@ export default function Auth() {
 
   useEffect(() => {
     const saveAnilistUser = async () => {
+      run.current = true;
       const hash = window.location.hash;
       const params = new URLSearchParams(hash.substring(1, hash.length - 1));
       const access_token = params.get("access_token");
 
       if (access_token) {
-        run.current = true;
         await fetch("/api/session", {
           method: "POST",
           body: JSON.stringify({ access_token }),
         });
-        router.replace("/");
-        router.refresh();
       }
+
+      router.replace("/");
+      router.refresh();
     };
 
     if (!run.current) {
@@ -29,5 +30,5 @@ export default function Auth() {
     }
   }, [router]);
 
-  return <div></div>;
+  return <div>Authenticating...</div>;
 }
