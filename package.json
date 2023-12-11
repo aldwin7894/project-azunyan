@@ -23,7 +23,7 @@
     "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.57",
+    "@iconify-json/mdi": "^1.1.60",
     "@iconify-json/simple-icons": "^1.1.81",
     "@iconify/tailwind": "^0.1.4",
     "@types/node": "^20",
