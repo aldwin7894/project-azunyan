@@ -1,23 +1,22 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 export default function Auth() {
   const router = useRouter();
+  const params = useSearchParams();
   const run = useRef(false);
 
   useEffect(() => {
-    const saveAnilistUser = async () => {
+    const saveMalUser = async () => {
       run.current = true;
-      const hash = window.location.hash;
-      const params = new URLSearchParams(hash.substring(1, hash.length - 1));
-      const access_token = params.get("access_token");
+      const authorization_token = params.get("code");
 
-      if (access_token) {
+      if (authorization_token) {
         await fetch("/api/session", {
           method: "POST",
-          body: JSON.stringify({ access_token, type: "AL" }),
+          body: JSON.stringify({ authorization_token, type: "MAL" }),
         });
       }
 
@@ -26,9 +25,9 @@ export default function Auth() {
     };
 
     if (!run.current) {
-      saveAnilistUser();
+      saveMalUser();
     }
-  }, [router]);
+  }, [params, router]);
 
   return <div>Authenticating...</div>;
 }

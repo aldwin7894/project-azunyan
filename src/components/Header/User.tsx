@@ -1,18 +1,12 @@
-import { cookies } from "next/headers";
-import { getIronSession } from "iron-session";
-import { UserSession } from "@/types/session";
 import Link from "next/link";
 import Image from "next/image";
 import UserMenu from "./UserMenu";
+import getSession from "@/utils/get-session";
 
 export default async function User() {
-  const session = await getIronSession<UserSession>(cookies(), {
-    password: process.env["NEXT_PUBLIC_MASTER_KEY"] as string,
-    cookieName: "auth",
-    ttl: 0,
-  });
+  const session = await getSession();
 
-  if (!session.anilist) {
+  if (!session.anilist?.account_details?.avatar?.medium) {
     return (
       <Link
         href={`https://anilist.co/api/v2/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_ANILIST_CLIENT_ID}&response_type=token`}
@@ -35,7 +29,7 @@ export default async function User() {
           className="rounded-full object-cover object-center"
         />
       </button>
-      <UserMenu />
+      <UserMenu session={JSON.parse(JSON.stringify(session))} />
     </div>
   );
 }
