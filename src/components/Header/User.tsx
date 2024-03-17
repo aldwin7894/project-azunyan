@@ -3,10 +3,10 @@ import Image from "next/image";
 import UserMenu from "./UserMenu";
 import getSession from "@/utils/get-session";
 
-export default async function User() {
-  const session = await getSession();
+export default async function UserHeader() {
+  const { session, user } = await getSession();
 
-  if (!session.anilist?.account_details?.avatar?.medium) {
+  if (!user.anilist?.account_details?.avatar?.medium) {
     return (
       <Link
         href={`https://anilist.co/api/v2/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_ANILIST_CLIENT_ID}&response_type=token`}
@@ -23,13 +23,13 @@ export default async function User() {
       <button tabIndex={0} className="avatar btn btn-circle btn-ghost">
         <Image
           alt="Avatar"
-          src={session.anilist.account_details.avatar.medium}
+          src={user.anilist.account_details.avatar.medium}
           width={40}
           height={40}
           className="rounded-full object-cover object-center"
         />
       </button>
-      <UserMenu session={JSON.parse(JSON.stringify(session))} />
+      <UserMenu session={JSON.parse(JSON.stringify(session))} user={user} />
     </div>
   );
 }

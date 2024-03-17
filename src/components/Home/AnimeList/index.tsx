@@ -1,16 +1,16 @@
 import AnilistClient, { UserAnimeListQuery } from "@/services/anilist";
-import { AnimeList } from "@/types/anilist";
+import { TAnimeList } from "@/types/anilist";
 import AnimeEntry from "./AnimeEntry";
 import getSession from "@/utils/get-session";
 
 export default async function AnimeList() {
-  const session = await getSession();
+  const { session } = await getSession();
 
-  if (!session?.anilist?.access_token) return;
+  if (!session?.al?.act) return;
 
-  const data = await AnilistClient(session.anilist.access_token)
-    .query<AnimeList>(UserAnimeListQuery, {
-      userId: session.anilist.account_details?.id,
+  const data = await AnilistClient(session.al.act)
+    .query<TAnimeList>(UserAnimeListQuery, {
+      userId: session._id,
     })
     .toPromise();
 

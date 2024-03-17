@@ -1,4 +1,4 @@
-export type AnimeList = {
+export type TAnimeList = {
   Watching: {
     hasNextChunk: boolean;
     lists: [

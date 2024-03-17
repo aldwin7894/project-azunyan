@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ToggleTheme from "../Header/ToggleTheme";
-import User from "../Header/User";
+import UserHeader from "../Header/User";
 
 export default function Header() {
   return (
@@ -12,7 +12,7 @@ export default function Header() {
       </div>
       <div className="flex flex-none flex-row items-center gap-2">
         <ToggleTheme />
-        <User />
+        <UserHeader />
       </div>
     </nav>
   );

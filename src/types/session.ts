@@ -1,25 +1,22 @@
-export type UserSession = {
-  anilist?: {
-    access_token?: string;
-    expiration?: string;
-    account_details?: {
-      id?: number;
-      name?: string;
-      siteUrl?: string;
-      avatar?: {
-        medium?: string;
-      };
-    };
+export type TUserSession = {
+  _id?: string | null;
+  al?: {
+    act?: string;
+    exp?: string;
   };
   mal?: {
-    authorization_token?: string;
-    access_token?: string;
-    expiration?: string;
-    account_details?: {
-      id?: number;
-      name?: string;
-      siteUrl?: string;
-      avatar?: string;
-    };
+    aut?: string;
+    cv?: string;
+    act?: string;
+    rft?: string;
+    exp?: string;
   };
+};
+
+export type TSessionPayload = {
+  type: string;
+  access_token?: string;
+  refresh_token?: string;
+  authorization_token?: string;
+  code_verifier?: string;
 };

@@ -2,9 +2,22 @@ import mongoose from "mongoose";
 
 const AnilistAccountSubSchema = new mongoose.Schema(
   {
-    access_token: { type: String, required: true },
-    expiration: { type: Date, required: true },
-    account_details: { type: mongoose.Schema.Types.Mixed },
+    account_details: {
+      id: {
+        type: String,
+      },
+      name: {
+        type: String,
+      },
+      siteUrl: {
+        type: String,
+      },
+      avatar: {
+        medium: {
+          type: String,
+        },
+      },
+    },
   },
   { _id: false },
 );
