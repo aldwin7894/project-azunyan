@@ -30,7 +30,7 @@
     "@iconify/tailwind": "^0.1.4",
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.11.30",
-    "@types/react": "^18.2.74",
+    "@types/react": "^18.2.78",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.3.1",
