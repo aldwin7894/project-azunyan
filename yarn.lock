@@ -2203,10 +2203,10 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
-oauth-pkce@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/oauth-pkce/-/oauth-pkce-0.0.6.tgz#9ac452bc7357c755bc7946ebb0e81ba76dc56b2a"
-  integrity sha512-hLLZvwJBAo1QHzPOvsM/QtDj/b9MBgQx/TH4kA/LPqFgWtICo4m7gtZUZARBiQ0I8lSKQRN8BhGTclVv8D45gg==
+oauth-pkce@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/oauth-pkce/-/oauth-pkce-0.0.7.tgz#03674ef421a7cb3031201811a189c393cdbee5b6"
+  integrity sha512-HMMakoec7G3Fyhq/VfYfQXmsJhZGQLncPCj/ir0xQQqX/kRDE9w1WFOaMJXlxfNlDDq3XDSy4mXGFPqU6oMAGg==
 
 object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"
