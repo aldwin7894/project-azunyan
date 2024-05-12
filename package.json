@@ -17,7 +17,7 @@
     "mongoose": "^8.3.3",
     "next": "14.1.4",
     "next-connect": "^1.0.0",
-    "oauth-pkce": "^0.0.6",
+    "oauth-pkce": "^0.0.7",
     "react": "^18",
     "react-dom": "^18",
     "simple-zustand-devtools": "^1.1.0",
