@@ -87,10 +87,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-json/simple-icons@^1.1.106":
-  version "1.1.106"
-  resolved "https://registry.yarnpkg.com/@iconify-json/simple-icons/-/simple-icons-1.1.106.tgz#00e8cc0a88f73e6f65a4867b56a251374963a67e"
-  integrity sha512-3aHpMAgc0UES/ecsCzaXhyBuJVy1AEC/IG03cso6KqvG+DJzrb3LT2ibTTB4uoGGPAmz/mq9df4LqYQhbSrHCA==
+"@iconify-json/simple-icons@^1.1.109":
+  version "1.1.109"
+  resolved "https://registry.yarnpkg.com/@iconify-json/simple-icons/-/simple-icons-1.1.109.tgz#32a1147c8c81e5c59eb4b01bf92e5b8ec05237b2"
+  integrity sha512-vIhIJQDdbS5R6kSyIHVBRCaR2jiFjVlbVtB4PAoLjQL45vJRHMTwkrFa536XcX7yW69HbQkoanydcyDjknI6pw==
   dependencies:
     "@iconify/types" "*"
 
