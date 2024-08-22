@@ -27,7 +27,7 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.67",
     "@iconify-json/simple-icons": "^1.1.109",
-    "@iconify/tailwind": "^1.1.1",
+    "@iconify/tailwind": "^1.1.2",
     "@types/lodash": "^4.17.7",
     "@types/node": "^22.4.2",
     "@types/react": "^18.3.3",
