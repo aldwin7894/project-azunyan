@@ -89,10 +89,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify/tailwind@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@iconify/tailwind/-/tailwind-1.1.1.tgz#8b6f8429445d57382753e1a960d83e551376de14"
-  integrity sha512-4mmA//qjZigv7D4KlqcVSYTqfRIJzyts2/lSCAJfCL0rVMIE76+ifJnaE5jxCo1+nYGBF8FsFo0qFOs+sX4EnA==
+"@iconify/tailwind@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@iconify/tailwind/-/tailwind-1.1.3.tgz#c8ba2c968c887b3160121530163cb91b68e20f1d"
+  integrity sha512-SfyeT+2b/aKWA6DjwdevXdLUqaEqJ5xWTegD92KItaWc47IYsGuqrt/GOz4dJCPcTVCrsUjlvMpy8cNd+uV5nQ==
   dependencies:
     "@iconify/types" "^2.0.0"
 
