@@ -1,15 +1,22 @@
 export type TUserSession = {
   _id?: string | null;
   al?: {
-    act?: string;
-    exp?: string;
+    id?: string | null;
+    username?: string | null;
+    avatar?: string | null;
   };
   mal?: {
     aut?: string;
     cv?: string;
-    act?: string;
-    rft?: string;
-    exp?: string;
+    id?: string | null;
+    username?: string | null;
+    avatar?: string | null;
+  };
+  simkl?: {
+    aut?: string;
+    id?: string | null;
+    username?: string | null;
+    avatar?: string | null;
   };
 };
 

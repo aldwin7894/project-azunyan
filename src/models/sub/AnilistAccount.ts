@@ -18,6 +18,14 @@ const AnilistAccountSubSchema = new mongoose.Schema(
         },
       },
     },
+    auth_details: {
+      access_token: {
+        type: String,
+      },
+      expires_in: {
+        type: String,
+      },
+    },
   },
   { _id: false },
 );

@@ -42,13 +42,13 @@ export default function AnimeEntry({
             alt={title}
             sizes="230px"
             quality={100}
-            className="absolute left-0 top-0 h-full w-full object-cover object-center"
+            className="absolute left-0 top-0 size-full object-cover object-center"
           />
           <button
             className="invisible absolute right-3 top-3 flex items-center rounded-md bg-primary/90 text-white group-hover:visible"
             onClick={() => editModal.current?.showModal()}
           >
-            <span className="icon-[mdi--dots-horizontal] z-[2] h-8 w-8"></span>
+            <span className="icon-[mdi--dots-horizontal] z-[2] size-8"></span>
           </button>
           <h1 className="absolute bottom-0 left-0 z-[1] w-full bg-neutral/80 p-3 pb-9 text-white">
             {title}

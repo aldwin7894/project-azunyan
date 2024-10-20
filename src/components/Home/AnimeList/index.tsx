@@ -4,11 +4,11 @@ import AnimeEntry from "./AnimeEntry";
 import getSession from "@/utils/get-session";
 
 export default async function AnimeList() {
-  const { session } = await getSession();
+  const { session, user } = await getSession();
 
-  if (!session?.al?.act) return;
+  if (!user.anilist?.auth_details?.access_token) return;
 
-  const data = await AnilistClient(session.al.act)
+  const data = await AnilistClient(user.anilist.auth_details.access_token)
     .query<TAnimeList>(UserAnimeListQuery, {
       userId: session._id,
     })

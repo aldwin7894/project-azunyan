@@ -9,14 +9,14 @@ function Auth() {
   const run = useRef(false);
 
   useEffect(() => {
-    const saveMalUser = async () => {
+    const saveSimklUser = async () => {
       run.current = true;
       const authorization_token = params.get("code");
 
       if (authorization_token) {
         await fetch("/api/session", {
           method: "POST",
-          body: JSON.stringify({ authorization_token, type: "MAL" }),
+          body: JSON.stringify({ authorization_token, type: "SIMKL" }),
         });
       }
 
@@ -25,14 +25,14 @@ function Auth() {
     };
 
     if (!run.current) {
-      saveMalUser();
+      saveSimklUser();
     }
   }, [params, router]);
 
   return <div>Authenticating...</div>;
 }
 
-export default function MALAuthPage() {
+export default function SimklAuthPage() {
   return (
     <Suspense>
       <Auth />

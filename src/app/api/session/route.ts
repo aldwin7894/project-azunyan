@@ -15,6 +15,10 @@ import MyAnimeListClient, {
   getMALUserDetails,
 } from "@/services/myanimelist";
 import User, { TUserSchema } from "@/models/User";
+import SimklClient, {
+  authorizeSimkl,
+  getSimklUserDetails,
+} from "@/services/simkl";
 
 const router = createEdgeRouter<NextRequest, NextFetchEvent>();
 router
@@ -35,6 +39,9 @@ router
       case "MAL":
         user = await saveMALSession(session, oldUser, body);
         break;
+      case "SIMKL":
+        user = await saveSimklSession(session, oldUser, body);
+        break;
       default:
         break;
     }
@@ -48,19 +55,19 @@ router
   });
 
 export async function GET(req: NextRequest, res: NextFetchEvent) {
-  return router.run(req, res);
+  return router.run(req, res) as Promise<NextResponse>;
 }
 export async function POST(req: NextRequest, res: NextFetchEvent) {
-  return router.run(req, res);
+  return router.run(req, res) as Promise<NextResponse>;
 }
 export async function DELETE(req: NextRequest, res: NextFetchEvent) {
-  return router.run(req, res);
+  return router.run(req, res) as Promise<NextResponse>;
 }
 
 const saveALSession = async (
   session: IronSession<TUserSession>,
   body: TSessionPayload,
-) => {
+): Promise<TUserSchema | undefined> => {
   if (!body.access_token) return;
 
   const ALUser = await AnilistClient(body.access_token)
@@ -73,15 +80,21 @@ const saveALSession = async (
     {
       anilist: {
         account_details: cloneDeep(ALUser.data.Viewer),
+        auth_details: {
+          access_token: body.access_token,
+          expires_in: dayjs().add(365, "days").toISOString(),
+        },
       },
     },
     { upsert: true, new: true },
   )
     .lean()
     .exec()) as TUserSchema;
+
   session.al = {
-    act: body.access_token,
-    exp: dayjs().add(365, "days").toISOString(),
+    id: user?.anilist?.account_details?.id,
+    username: user?.anilist?.account_details?.name,
+    avatar: user?.anilist?.account_details?.avatar?.medium,
   };
   session._id = user._id;
   await session.save();
@@ -92,7 +105,7 @@ const saveMALSession = async (
   session: IronSession<TUserSession>,
   oldUser: TUserSchema,
   body: TSessionPayload,
-) => {
+): Promise<TUserSchema> => {
   let user;
 
   if (session.mal) {
@@ -105,22 +118,22 @@ const saveMALSession = async (
     };
   }
   // IF NOT YET AUTHORIZED
-  if (session.mal?.aut && session.mal?.cv && !session.mal?.act) {
+  if (session.mal?.aut && session.mal?.cv && !session.mal?.id) {
     const auth = await authorizeMAL(session.mal.aut, session.mal.cv);
-    session.mal = {
-      act: auth.access_token,
-      rft: auth.refresh_token,
-      exp: dayjs().add(auth.expires_in, "seconds").toISOString(),
-    };
+    const client = MyAnimeListClient(`Bearer ${auth.access_token}`);
+    const userDetails = await getMALUserDetails(client);
 
-    const MALClient = MyAnimeListClient(`Bearer ${session.mal.act}`);
-    const MALUser = await getMALUserDetails(MALClient);
-    if (MALUser) {
+    if (userDetails) {
       user = (await User.findByIdAndUpdate(
         session._id,
         {
           myanimelist: {
-            account_details: cloneDeep(MALUser),
+            account_details: cloneDeep(userDetails),
+            auth_details: {
+              access_token: auth.access_token,
+              refresh_token: auth.refresh_token,
+              expires_in: dayjs().add(auth.expires_in, "seconds").toISOString(),
+            },
           },
         },
         { upsert: true, new: true },
@@ -130,6 +143,60 @@ const saveMALSession = async (
     }
   }
 
+  session.mal = {
+    id: user?.myanimelist?.account_details?.id,
+    username: user?.myanimelist?.account_details?.name,
+    avatar: user?.myanimelist?.account_details?.picture,
+  };
+  await session.save();
+  return user ?? oldUser;
+};
+const saveSimklSession = async (
+  session: IronSession<TUserSession>,
+  oldUser: TUserSchema,
+  body: TSessionPayload,
+): Promise<TUserSchema> => {
+  let user;
+
+  if (session.simkl) {
+    session.simkl.aut = body.authorization_token ?? session.simkl.aut;
+  } else {
+    session.simkl = {
+      aut: body.authorization_token,
+    };
+  }
+  // IF NOT YET AUTHORIZED
+  if (session.simkl?.aut && !session.simkl?.id) {
+    const auth = await authorizeSimkl(session.simkl.aut);
+    const client = SimklClient(`Bearer ${auth.access_token}`);
+    const userDetails = await getSimklUserDetails(client);
+
+    if (userDetails) {
+      user = (await User.findByIdAndUpdate(
+        session._id,
+        {
+          simkl: {
+            account_details: {
+              ...userDetails.account,
+              ...userDetails.user,
+            },
+            auth_details: {
+              access_token: auth.access_token,
+            },
+          },
+        },
+        { upsert: true, new: true },
+      )
+        .lean()
+        .exec()) as TUserSchema;
+    }
+  }
+
+  session.simkl = {
+    id: user?.simkl?.account_details?.id,
+    username: user?.simkl?.account_details?.name,
+    avatar: user?.simkl?.account_details?.avatar,
+  };
   await session.save();
   return user ?? oldUser;
 };

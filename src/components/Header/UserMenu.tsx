@@ -30,7 +30,9 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
     router.replace("/");
     router.refresh();
   };
-  const redirectToMalAuth = async () => {
+  const redirectToMalAuth = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
     await fetch("/api/session", {
       method: "POST",
       body: JSON.stringify({
@@ -42,6 +44,15 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
     if (!session.mal?.aut) {
       router.push(
         `https://myanimelist.net/v1/oauth2/authorize?response_type=code&client_id=${process.env.NEXT_PUBLIC_MAL_CLIENT_ID}&code_challenge=${pkce?.challenge}`,
+      );
+    }
+  };
+  const redirectToSimklAuth = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    console.log(session?.simkl);
+    if (!session.simkl?.aut) {
+      router.push(
+        `https://simkl.com/oauth/authorize?response_type=code&client_id=${process.env.NEXT_PUBLIC_SIMKL_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_HOST}/simkl/auth`,
       );
     }
   };
@@ -59,11 +70,12 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
       <Modal ref={settingsModal} title="Settings" saveLabel="Confirm">
         <div className="flex flex-col gap-2">
           <div className="flex flex-row items-center gap-4">
-            <span className="icon-[simple-icons--anilist] h-8 w-8"></span>
-            {user?.anilist?.account_details?.siteUrl && (
+            <span className="icon-[simple-icons--anilist] size-8"></span>
+            {session.al && user?.anilist?.account_details?.siteUrl && (
               <Link
                 href={user?.anilist?.account_details?.siteUrl}
                 className="hover:text-blue-400 hover:underline"
+                target="_blank"
               >
                 {user?.anilist?.account_details?.name}
               </Link>
@@ -71,11 +83,12 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
           </div>
 
           <div className="flex flex-row flex-wrap items-center gap-4">
-            <span className="icon-[simple-icons--myanimelist] h-8 w-8"></span>
-            {user?.myanimelist?.account_details?.name ? (
+            <span className="icon-[simple-icons--myanimelist] size-8"></span>
+            {session?.mal && user?.myanimelist?.account_details?.name ? (
               <Link
                 href={`https://myanimelist.net/profile/${user.myanimelist.account_details.name}`}
                 className="hover:text-blue-400 hover:underline"
+                target="_blank"
               >
                 {user?.myanimelist?.account_details?.name}
               </Link>
@@ -84,6 +97,27 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
                 href="#"
                 className="btn btn-primary flex items-center text-white"
                 onClick={redirectToMalAuth}
+              >
+                <span>Login</span>
+              </Link>
+            )}
+          </div>
+
+          <div className="flex flex-row flex-wrap items-center gap-4">
+            <span className="icon-[simple-icons--simkl] size-8"></span>
+            {session?.simkl && user?.simkl?.account_details?.id ? (
+              <Link
+                href={`https://simkl.com/${user.simkl.account_details.id}`}
+                className="hover:text-blue-400 hover:underline"
+                target="_blank"
+              >
+                {user?.simkl?.account_details?.name}
+              </Link>
+            ) : (
+              <Link
+                href="#"
+                className="btn btn-primary flex items-center text-white"
+                onClick={redirectToSimklAuth}
               >
                 <span>Login</span>
               </Link>

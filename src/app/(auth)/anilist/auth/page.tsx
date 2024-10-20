@@ -1,9 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 
-export default function Auth() {
+function Auth() {
   const router = useRouter();
   const run = useRef(false);
 
@@ -31,4 +31,12 @@ export default function Auth() {
   }, [router]);
 
   return <div>Authenticating...</div>;
+}
+
+export default function ALAuthPage() {
+  return (
+    <Suspense>
+      <Auth />
+    </Suspense>
+  );
 }

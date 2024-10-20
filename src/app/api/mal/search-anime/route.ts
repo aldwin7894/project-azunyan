@@ -11,5 +11,5 @@ router.get(async () => {
 });
 
 export async function GET(req: NextRequest, res: NextFetchEvent) {
-  return router.run(req, res);
+  return router.run(req, res) as Promise<NextResponse>;
 }

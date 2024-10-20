@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MyAnimeListAccountSubSchema = new mongoose.Schema(
+const SimklAccountSubSchema = new mongoose.Schema(
   {
     account_details: {
       id: {
@@ -9,19 +9,25 @@ const MyAnimeListAccountSubSchema = new mongoose.Schema(
       name: {
         type: String,
       },
-      gender: {
-        type: String,
-      },
-      birthday: {
-        type: String,
-      },
-      location: {
-        type: String,
-      },
       joined_at: {
         type: String,
       },
-      picture: {
+      avatar: {
+        type: String,
+      },
+      bio: {
+        type: String,
+      },
+      loc: {
+        type: String,
+      },
+      age: {
+        type: String,
+      },
+      timezone: {
+        type: String,
+      },
+      type: {
         type: String,
       },
     },
@@ -29,15 +35,9 @@ const MyAnimeListAccountSubSchema = new mongoose.Schema(
       access_token: {
         type: String,
       },
-      refresh_token: {
-        type: String,
-      },
-      expires_in: {
-        type: String,
-      },
     },
   },
   { _id: false },
 );
 
-export default MyAnimeListAccountSubSchema;
+export default SimklAccountSubSchema;

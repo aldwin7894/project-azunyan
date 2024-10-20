@@ -12,7 +12,7 @@ export default async function UserHeader() {
         href={`https://anilist.co/api/v2/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_ANILIST_CLIENT_ID}&response_type=token`}
         className="btn btn-primary flex items-center text-white"
       >
-        <span className="icon-[simple-icons--anilist] h-5 w-5" />
+        <span className="icon-[simple-icons--anilist] size-5" />
         <span>Login</span>
       </Link>
     );
