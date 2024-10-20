@@ -141,13 +141,14 @@ const saveMALSession = async (
         .lean()
         .exec()) as TUserSchema;
     }
+
+    session.mal = {
+      id: user?.myanimelist?.account_details?.id,
+      username: user?.myanimelist?.account_details?.name,
+      avatar: user?.myanimelist?.account_details?.picture,
+    };
   }
 
-  session.mal = {
-    id: user?.myanimelist?.account_details?.id,
-    username: user?.myanimelist?.account_details?.name,
-    avatar: user?.myanimelist?.account_details?.picture,
-  };
   await session.save();
   return user ?? oldUser;
 };
