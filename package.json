@@ -22,7 +22,7 @@
     "react-dom": "^18",
     "simple-zustand-devtools": "^1.1.0",
     "urql": "^4.2.0",
-    "zustand": "^5.0.0"
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.1",
