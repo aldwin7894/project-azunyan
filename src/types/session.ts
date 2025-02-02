@@ -18,6 +18,13 @@ export type TUserSession = {
     username?: string | null;
     avatar?: string | null;
   };
+  trakt?: {
+    aut?: string;
+    id?: string | null;
+    slug?: string | null;
+    username?: string | null;
+    avatar?: string | null;
+  };
 };
 
 export type TSessionPayload = {

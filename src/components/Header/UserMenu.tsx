@@ -56,6 +56,15 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
       );
     }
   };
+  const redirectToTraktAuth = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    console.log(session?.trakt);
+    if (!session.trakt?.aut) {
+      router.push(
+        `https://trakt.tv/oauth/authorize?response_type=code&client_id=${process.env.NEXT_PUBLIC_TRAKT_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_HOST}/trakt/auth`,
+      );
+    }
+  };
 
   useEffect(() => {
     getPkce(50, (_, { verifier, challenge }) => {
@@ -118,6 +127,27 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
                 href="#"
                 className="btn btn-primary flex items-center text-white"
                 onClick={redirectToSimklAuth}
+              >
+                <span>Login</span>
+              </Link>
+            )}
+          </div>
+
+          <div className="flex flex-row flex-wrap items-center gap-4">
+            <span className="icon-[simple-icons--trakt] size-8"></span>
+            {session?.trakt && user?.trakt?.account_details?.id ? (
+              <Link
+                href={`https://trakt.tv/users/${user.trakt.account_details.slug}`}
+                className="hover:text-blue-400 hover:underline"
+                target="_blank"
+              >
+                {user?.trakt?.account_details?.username}
+              </Link>
+            ) : (
+              <Link
+                href="#"
+                className="btn btn-primary flex items-center text-white"
+                onClick={redirectToTraktAuth}
               >
                 <span>Login</span>
               </Link>

@@ -19,6 +19,10 @@ import SimklClient, {
   authorizeSimkl,
   getSimklUserDetails,
 } from "@/services/simkl";
+import TraktClient, {
+  authorizeTrakt,
+  getTraktUserDetails,
+} from "@/services/trakt";
 
 const router = createEdgeRouter<NextRequest, NextFetchEvent>();
 router
@@ -41,6 +45,9 @@ router
         break;
       case "SIMKL":
         user = await saveSimklSession(session, oldUser, body);
+        break;
+      case "TRAKT":
+        user = await saveTraktSession(session, oldUser, body);
         break;
       default:
         break;
@@ -196,6 +203,61 @@ const saveSimklSession = async (
   session.simkl = {
     id: user?.simkl?.account_details?.id,
     username: user?.simkl?.account_details?.name,
+    avatar: user?.simkl?.account_details?.avatar,
+  };
+  await session.save();
+  return user ?? oldUser;
+};
+const saveTraktSession = async (
+  session: IronSession<TUserSession>,
+  oldUser: TUserSchema,
+  body: TSessionPayload,
+): Promise<TUserSchema> => {
+  let user: TUserSchema | null = null;
+
+  if (session.trakt) {
+    session.trakt.aut = body.authorization_token ?? session.trakt.aut;
+  } else {
+    session.trakt = {
+      aut: body.authorization_token,
+    };
+  }
+  // IF NOT YET AUTHORIZED
+  if (session.trakt?.aut && !session.trakt?.id) {
+    const auth = await authorizeTrakt(session.trakt.aut);
+    const client = TraktClient(`Bearer ${auth.access_token}`);
+    const userDetails = await getTraktUserDetails(client);
+
+    if (userDetails) {
+      user = (await User.findByIdAndUpdate(
+        session._id,
+        {
+          trakt: {
+            account_details: {
+              ...userDetails.account,
+              ...userDetails.user,
+              id: userDetails.user.ids.uuid,
+              slug: userDetails.user.ids.slug,
+              avatar: userDetails.user.images.avatar.full,
+            },
+            auth_details: {
+              access_token: auth.access_token,
+              refresh_token: auth.refresh_token,
+              expires_in: dayjs().add(auth.expires_in, "seconds").toISOString(),
+            },
+          },
+        },
+        { upsert: true, new: true },
+      )
+        .lean()
+        .exec()) as TUserSchema;
+    }
+  }
+
+  session.trakt = {
+    id: user?.trakt?.account_details?.id,
+    slug: user?.trakt?.account_details?.slug,
+    username: user?.trakt?.account_details?.username,
     avatar: user?.simkl?.account_details?.avatar,
   };
   await session.save();

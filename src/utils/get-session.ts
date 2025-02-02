@@ -6,7 +6,7 @@ import { cookies } from "next/headers";
 
 const getSession = async () => {
   await dbConnect();
-  const session = await getIronSession<TUserSession>(cookies(), {
+  const session = await getIronSession<TUserSession>(await cookies(), {
     password: process.env["NEXT_PUBLIC_MASTER_KEY"] as string,
     cookieName: "auth",
     ttl: 0,
@@ -15,7 +15,7 @@ const getSession = async () => {
   return {
     session,
     user: session._id
-      ? ((await User.findById(session._id).lean()) as TUserSchema)
+      ? ((await User.findById(session._id).lean()) as unknown as TUserSchema)
       : ({} as TUserSchema),
   };
 };
