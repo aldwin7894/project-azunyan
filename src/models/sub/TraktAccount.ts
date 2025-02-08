@@ -47,6 +47,9 @@ const TraktAccountSubSchema = new mongoose.Schema(
       expires_in: {
         type: String,
       },
+      created_at: {
+        type: String,
+      },
     },
   },
   { _id: false },

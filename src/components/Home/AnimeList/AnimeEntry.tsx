@@ -1,6 +1,8 @@
 "use client";
 
+import Card from "@/components/common/Card";
 import Modal from "@/components/common/Modal";
+import { TUserSchema } from "@/models/User";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -11,6 +13,7 @@ type Props = {
   currentProgress: number;
   totalEpisodes: number;
   rating: number;
+  user?: TUserSchema;
 };
 
 export default function AnimeEntry({
@@ -74,7 +77,12 @@ export default function AnimeEntry({
         saveLabel="Confirm"
         onSave={handleUpdateMapping}
       >
-        <div></div>
+        <div className="flex flex-col gap-2">
+          <Card title="AniList">test</Card>
+          <Card title="MyAnimeList">test</Card>
+          <Card title="SIMKL">test</Card>
+          <Card title="Trakt">test</Card>
+        </div>
       </Modal>
       <Modal
         ref={episodeModal}
