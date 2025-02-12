@@ -27,9 +27,9 @@ import TraktClient, {
 const router = createEdgeRouter<NextRequest, NextFetchEvent>();
 router
   .get(async () => {
-    const { session, user } = await getSession();
+    const response = await getSession();
 
-    return NextResponse.json({ ...session, ...user });
+    return NextResponse.json({ ...response });
   })
   .post(async req => {
     const body: TSessionPayload = await req.json();
@@ -244,6 +244,7 @@ const saveTraktSession = async (
               access_token: auth.access_token,
               refresh_token: auth.refresh_token,
               expires_in: dayjs().add(auth.expires_in, "seconds").toISOString(),
+              created_at: dayjs.unix(auth.created_at).toISOString(),
             },
           },
         },

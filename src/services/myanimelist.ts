@@ -39,6 +39,33 @@ export const authorizeMAL = async (
     .then(res => res.data as TMALAuthResponse);
 };
 
+export const refreshMALToken = async (
+  access_token: string,
+  refresh_token: string,
+) => {
+  const client = axios.create({
+    baseURL: "https://myanimelist.net/v1/",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+      Authorization: `Bearer ${access_token}`,
+    },
+    timeout: 60000,
+  });
+
+  const params = new URLSearchParams();
+  params.append("client_id", process.env.NEXT_PUBLIC_MAL_CLIENT_ID as string);
+  params.append(
+    "client_secret",
+    process.env.NEXT_PUBLIC_MAL_CLIENT_SECRET as string,
+  );
+  params.append("grant_type", "refresh_token");
+  params.append("refresh_token", refresh_token);
+
+  return client
+    .post("/oauth2/token", params)
+    .then(res => res.data as TMALAuthResponse);
+};
+
 export const getMALUserDetails = async (client: AxiosInstance) => {
   const res = await client.get("/users/@me");
   return res.data;

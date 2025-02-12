@@ -30,6 +30,25 @@ export const authorizeTrakt = async (
     .then(res => res.data);
 };
 
+export const refreshTraktToken = async (
+  access_token: string,
+  refresh_token: string,
+) => {
+  const params = new URLSearchParams();
+  params.append("client_id", process.env.NEXT_PUBLIC_TRAKT_CLIENT_ID as string);
+  params.append(
+    "client_secret",
+    process.env.NEXT_PUBLIC_TRAKT_CLIENT_SECRET as string,
+  );
+  params.append("grant_type", "refresh_token");
+  params.append("refresh_token", refresh_token);
+  params.append("redirect_uri", `${process.env.NEXT_PUBLIC_HOST}/trakt/auth`);
+
+  return TraktClient()
+    .post("/oauth/token", params)
+    .then(res => res.data as TTraktAuthResponse);
+};
+
 export const getTraktUserDetails = async (
   client: AxiosInstance,
 ): Promise<TTraktUserDetailsResponse> => {

@@ -23,8 +23,8 @@ const config: Config & { daisyui: DaisyConfig } = {
     },
   },
   daisyui: {
-    themes: ["dark", "cupcake"],
-    darkTheme: "dark",
+    themes: ["night", "cupcake"],
+    darkTheme: "night",
   },
   plugins: [daisyui, addDynamicIconSelectors()],
 };

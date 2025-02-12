@@ -1,22 +1,15 @@
-import AnilistClient, { UserAnimeListQuery } from "@/services/anilist";
-import { TAnimeList } from "@/types/anilist";
+import { TAnimeEntry } from "@/types/anilist";
 import AnimeEntry from "./AnimeEntry";
-import getSession from "@/utils/get-session";
+import { TUserSchema } from "@/models/User";
 
-export default async function AnimeList() {
-  const { session, user } = await getSession();
-
-  if (!user.anilist?.auth_details?.access_token) return;
-
-  const data = await AnilistClient(user.anilist.auth_details.access_token)
-    .query<TAnimeList>(UserAnimeListQuery, {
-      userId: session._id,
-    })
-    .toPromise();
-
+type Props = {
+  data?: TAnimeEntry[];
+  user?: TUserSchema;
+};
+export default function AnimeList({ data, user }: Readonly<Props>) {
   return (
     <div className="grid flex-1 grid-cols-6 gap-8">
-      {data.data?.Watching.lists[0].entries.map(anime => (
+      {data?.map(anime => (
         <AnimeEntry
           id={anime.id}
           image={anime.media.coverImage.large}
@@ -25,6 +18,7 @@ export default async function AnimeList() {
           title={anime.media.title.userPreferred}
           totalEpisodes={anime.media.episodes}
           key={anime.id}
+          user={user}
         />
       ))}
     </div>
