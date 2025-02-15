@@ -24,7 +24,9 @@ export default function RootLayout({
         <Theme />
         <Header />
         <main className="container overflow-x-auto overflow-y-hidden">
-          {children}
+          <div className="flex min-h-[calc(100vh-68px)] w-full flex-col pt-5">
+            {children}
+          </div>
         </main>
       </body>
     </html>
