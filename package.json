@@ -14,10 +14,8 @@
     "dayjs": "^1.11.13",
     "iron-session": "^8.0.4",
     "lodash": "^4.17.21",
-
     "mongoose": "^8.10.1",
     "next": "15.1.7",
-
     "next-connect": "^1.0.0",
     "oauth-pkce": "^0.0.7",
     "react": "^19",
