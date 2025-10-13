@@ -15,7 +15,7 @@
     "iron-session": "^8.0.4",
     "lodash": "^4.17.21",
     "mongoose": "^8.19.1",
-    "next": "15.5.2",
+    "next": "15.5.4",
     "next-connect": "^1.0.0",
     "oauth-pkce": "^0.0.7",
     "react": "^19",
