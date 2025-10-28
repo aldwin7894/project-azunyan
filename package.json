@@ -30,7 +30,7 @@
     "@iconify-json/simple-icons": "^1.2.36",
     "@iconify/tailwind": "^1.2.0",
     "@types/lodash": "^4.17.17",
-    "@types/node": "^22.15.3",
+    "@types/node": "^24.9.1",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.1.5",
     "@typescript-eslint/eslint-plugin": "^8.46.0",
