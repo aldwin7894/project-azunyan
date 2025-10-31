@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start --webpack",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -31,14 +31,14 @@
     "@eslint/js": "^9.38.0",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.56",
-    "@iconify/tailwind": "^1.2.0",
+    "@iconify/tailwind4": "^1.0.6",
+    "@tailwindcss/postcss": "^4.1.16",
     "@types/lodash": "^4.17.20",
     "@types/node": "^24.9.2",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
-    "autoprefixer": "^10.4.21",
     "daisyui": "^5.3.10",
     "eslint": "9.38.0",
     "eslint-config-next": "16.0.1",
@@ -48,7 +48,7 @@
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
-    "tailwindcss": "^3.4.18",
+    "tailwindcss": "^4.1.16",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2"
   },

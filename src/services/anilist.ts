@@ -1,9 +1,10 @@
-import { Client, cacheExchange, fetchExchange, gql } from "urql";
+import { Client, cacheExchange, fetchExchange, gql } from "urql/core";
 
 const AnilistClient = (accessToken: string) => {
   return new Client({
     url: "https://graphql.anilist.co",
     exchanges: [cacheExchange, fetchExchange],
+    preferGetMethod: false,
     fetchOptions: {
       headers: {
         authorization: accessToken ? `Bearer ${accessToken}` : "",

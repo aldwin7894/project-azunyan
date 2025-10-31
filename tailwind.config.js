@@ -1,9 +1,4 @@
-import type { Config } from "tailwindcss";
-import type { Config as DaisyConfig } from "daisyui";
-import daisyui from "daisyui";
-import { addDynamicIconSelectors } from "@iconify/tailwind";
-
-const config: Config & { daisyui: DaisyConfig } = {
+const config = {
   darkMode: ["class", "[data-theme='dark']"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,10 +17,5 @@ const config: Config & { daisyui: DaisyConfig } = {
       center: true,
     },
   },
-  daisyui: {
-    themes: ["night", "cupcake"],
-    darkTheme: "night",
-  },
-  plugins: [daisyui, addDynamicIconSelectors()],
 };
 export default config;

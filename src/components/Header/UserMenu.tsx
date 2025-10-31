@@ -156,7 +156,7 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
         </div>
       </Modal>
 
-      <ul className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-300 p-2 shadow">
+      <ul className="menu dropdown-content menu-sm z-1 mt-3 w-52 rounded-box bg-base-300 p-2 shadow-sm">
         <li>
           <a onClick={() => settingsModal.current?.showModal()} href="#">
             Settings

@@ -51,12 +51,12 @@ export default function AnimeEntry({
             className="invisible absolute right-3 top-3 flex items-center rounded-md bg-primary/90 text-white group-hover:visible"
             onClick={() => editModal.current?.showModal()}
           >
-            <span className="icon-[mdi--dots-horizontal] z-[2] size-8"></span>
+            <span className="icon-[mdi--dots-horizontal] z-2 size-8"></span>
           </button>
-          <h1 className="absolute bottom-0 left-0 z-[1] w-full bg-neutral/80 p-3 pb-9 text-white">
+          <h1 className="absolute bottom-0 left-0 z-1 w-full bg-neutral/80 p-3 pb-9 text-white">
             {title}
           </h1>
-          <h1 className="absolute bottom-0 left-0 z-[2] p-3 font-semibold text-primary">
+          <h1 className="absolute bottom-0 left-0 z-2 p-3 font-semibold text-primary">
             {currentProgress} / {totalEpisodes}
             <button
               className="invisible ml-1 group-hover:visible"
@@ -65,7 +65,7 @@ export default function AnimeEntry({
               +
             </button>
           </h1>
-          <h1 className="absolute bottom-0 right-0 z-[2] p-3 font-semibold text-primary">
+          <h1 className="absolute bottom-0 right-0 z-2 p-3 font-semibold text-primary">
             {rating}
           </h1>
         </div>
