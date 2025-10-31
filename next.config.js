@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config) => {
+  webpack: config => {
     config.resolve.fallback = {
       "mongodb-client-encryption": false,
-      "aws4": false
+      aws4: false,
     };
 
     return config;
@@ -11,11 +11,11 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 's4.anilist.co',
+        protocol: "https",
+        hostname: "s4.anilist.co",
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -1,4 +1,3 @@
-/* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import mongoose from "mongoose";
 declare global {
@@ -24,9 +23,10 @@ async function dbConnect() {
   }
 
   if (!cached.promise) {
-    const opts = {
+    const opts: mongoose.ConnectOptions = {
       dbName: "project-azunyan",
       bufferCommands: false,
+      directConnection: true,
     };
 
     cached.promise = mongoose.connect(MONGODB_URL, opts).then(mongoose => {
