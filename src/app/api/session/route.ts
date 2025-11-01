@@ -23,6 +23,7 @@ import TraktClient, {
   authorizeTrakt,
   getTraktUserDetails,
 } from "@/services/trakt";
+import CryptoUtil from "@/utils/crypto";
 
 const router = createEdgeRouter<NextRequest, NextFetchEvent>();
 router
@@ -88,7 +89,7 @@ const saveALSession = async (
       anilist: {
         account_details: cloneDeep(ALUser.data.Viewer),
         auth_details: {
-          access_token: body.access_token,
+          access_token: CryptoUtil.encryptSymmetric(body.access_token),
           expires_in: dayjs().add(365, "days").toISOString(),
         },
       },
@@ -102,6 +103,7 @@ const saveALSession = async (
     id: user?.anilist?.account_details?.id,
     username: user?.anilist?.account_details?.name,
     avatar: user?.anilist?.account_details?.avatar?.medium,
+    scoreFormat: user?.anilist?.account_details?.mediaListOptions?.scoreFormat,
   };
   session._id = user._id;
   await session.save();
@@ -137,8 +139,8 @@ const saveMALSession = async (
           myanimelist: {
             account_details: cloneDeep(userDetails),
             auth_details: {
-              access_token: auth.access_token,
-              refresh_token: auth.refresh_token,
+              access_token: CryptoUtil.encryptSymmetric(auth.access_token),
+              refresh_token: CryptoUtil.encryptSymmetric(auth.refresh_token),
               expires_in: dayjs().add(auth.expires_in, "seconds").toISOString(),
             },
           },
@@ -189,7 +191,7 @@ const saveSimklSession = async (
               ...userDetails.user,
             },
             auth_details: {
-              access_token: auth.access_token,
+              access_token: CryptoUtil.encryptSymmetric(auth.access_token),
             },
           },
         },
@@ -241,8 +243,8 @@ const saveTraktSession = async (
               avatar: userDetails.user.images.avatar.full,
             },
             auth_details: {
-              access_token: auth.access_token,
-              refresh_token: auth.refresh_token,
+              access_token: CryptoUtil.encryptSymmetric(auth.access_token),
+              refresh_token: CryptoUtil.encryptSymmetric(auth.refresh_token),
               expires_in: dayjs().add(auth.expires_in, "seconds").toISOString(),
               created_at: dayjs.unix(auth.created_at).toISOString(),
             },

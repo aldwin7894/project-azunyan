@@ -22,6 +22,9 @@ export const ViewerQuery = gql`
       avatar {
         medium
       }
+      mediaListOptions {
+        scoreFormat
+      }
     }
   }
 `;

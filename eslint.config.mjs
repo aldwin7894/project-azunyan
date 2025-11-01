@@ -85,5 +85,6 @@ export default defineConfig([
           "caughtErrorsIgnorePattern": "^_"
         }
       ],
+      "tailwindcss/no-custom-classname": "off"
     },
 }]);

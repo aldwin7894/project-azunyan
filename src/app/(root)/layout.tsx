@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={clsx(inter.className, "antialiased")}>
         <Theme />
         <Header />
-        <main className="container overflow-x-auto overflow-y-hidden">
+        <main className="container mx-auto overflow-x-auto overflow-y-hidden">
           <div className="flex min-h-[calc(100vh-68px)] w-full flex-col pt-5">
             {children}
           </div>

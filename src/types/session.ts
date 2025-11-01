@@ -4,6 +4,13 @@ export type TUserSession = {
     id?: string | null;
     username?: string | null;
     avatar?: string | null;
+    scoreFormat?:
+      | "POINT_100"
+      | "POINT_10_DECIMAL"
+      | "POINT_10"
+      | "POINT_5"
+      | "POINT_3"
+      | null;
   };
   mal?: {
     aut?: string;

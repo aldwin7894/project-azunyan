@@ -19,7 +19,7 @@ export default forwardRef(function Modal(
       <div className="modal-box">
         {title && <h3 className="text-lg font-bold">{title}</h3>}
         <form method="dialog">
-          <button className="btn btn-circle btn-ghost btn-sm absolute right-4 top-4">
+          <button className="btn btn-circle btn-ghost btn-sm absolute top-4 right-4">
             <span className="icon-[mdi--close] size-6" />
           </button>
         </form>

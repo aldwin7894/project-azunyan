@@ -3,5 +3,3 @@
   themes: night --default, night --prefersdark, cupcake;
 }
 @plugin "@iconify/tailwind4";
-
-@config '../../tailwind.config.js';

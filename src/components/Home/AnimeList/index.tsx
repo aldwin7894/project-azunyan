@@ -11,13 +11,14 @@ export default function AnimeList({ data, user }: Readonly<Props>) {
     <div className="grid flex-1 grid-cols-6 gap-8">
       {data?.map(anime => (
         <AnimeEntry
-          id={anime.id}
+          id={anime.mediaId}
           image={anime.media.coverImage.large}
           currentProgress={anime.progress}
           rating={anime.score}
           title={anime.media.title.userPreferred}
           totalEpisodes={anime.media.episodes}
-          key={anime.id}
+          status={anime.status}
+          key={anime.mediaId}
           user={user}
         />
       ))}

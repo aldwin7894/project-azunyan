@@ -7,6 +7,7 @@ import { createEdgeRouter } from "next-connect";
 import getSession from "@/utils/get-session";
 import AnilistClient, { UserAnimeListQuery } from "@/services/anilist";
 import { TAnimeList } from "@/types/anilist";
+import CryptoUtil from "@/utils/crypto";
 
 const router = createEdgeRouter<NextRequest, NextFetchEvent>();
 router.get(async () => {
@@ -15,7 +16,10 @@ router.get(async () => {
   if (!user.anilist?.auth_details?.access_token || !session._id)
     return NextResponse.json([]);
 
-  const data = await AnilistClient(user.anilist.auth_details.access_token)
+  const token = CryptoUtil.decryptSymmetric(
+    user.anilist.auth_details.access_token,
+  );
+  const data = await AnilistClient(token)
     .query<TAnimeList>(UserAnimeListQuery, {
       userId: session._id,
     })
