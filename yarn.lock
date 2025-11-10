@@ -320,10 +320,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-json/simple-icons@^1.2.56":
-  version "1.2.56"
-  resolved "https://registry.yarnpkg.com/@iconify-json/simple-icons/-/simple-icons-1.2.56.tgz#f225b1dc10a6f9bbd80b55342bf34f13633f3824"
-  integrity sha512-oAvxOzgSjfvdj/Jsi3S7HDUCxO8/n2j8e1w1e/FktHUAXiWjNX00n3Tu3AP+n1ayKrypcUDXCzxn+0ENMl6ouw==
+"@iconify-json/simple-icons@^1.2.58":
+  version "1.2.58"
+  resolved "https://registry.yarnpkg.com/@iconify-json/simple-icons/-/simple-icons-1.2.58.tgz#a1b7eef3cee6a969b34af66170d19e7341d9f9bf"
+  integrity sha512-XtXEoRALqztdNc9ujYBj2tTCPKdIPKJBdLNDebFF46VV1aOAwTbAYMgNsK5GMCpTJupLCmpBWDn+gX5SpECorQ==
   dependencies:
     "@iconify/types" "*"
 
