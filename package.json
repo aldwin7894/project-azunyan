@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@eslint/compat": "^1.4.1",
-    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.1",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.59",
