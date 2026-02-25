@@ -331,10 +331,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-json/simple-icons@^1.2.68":
-  version "1.2.68"
-  resolved "https://registry.yarnpkg.com/@iconify-json/simple-icons/-/simple-icons-1.2.68.tgz#1fe7bac294784a4808358926ab60675d3c9d4712"
-  integrity sha512-bQPl1zuZlX6AnofreA1v7J+hoPncrFMppqGboe/SH54jZO37meiBUGBqNOxEpc0HKfZGxJaVVJwZd4gdMYu3hw==
+"@iconify-json/simple-icons@^1.2.71":
+  version "1.2.71"
+  resolved "https://registry.yarnpkg.com/@iconify-json/simple-icons/-/simple-icons-1.2.71.tgz#c1f0b403688b0bd4b49d24929ab1e6634bd31ccb"
+  integrity sha512-rNoDFbq1fAYiEexBvrw613/xiUOPEu5MKVV/X8lI64AgdTzLQUUemr9f9fplxUMPoxCBP2rWzlhOEeTHk/Sf0Q==
   dependencies:
     "@iconify/types" "*"
 
@@ -2514,10 +2514,10 @@ globals@^14.0.0:
   resolved "https://registry.yarnpkg.com/globals/-/globals-14.0.0.tgz#898d7413c29babcf6bafe56fcadded858ada724e"
   integrity sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==
 
-globals@^16.5.0:
-  version "16.5.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-16.5.0.tgz#ccf1594a437b97653b2be13ed4d8f5c9f850cac1"
-  integrity sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ==
+globals@^17.3.0:
+  version "17.3.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-17.3.0.tgz#8b96544c2fa91afada02747cc9731c002a96f3b9"
+  integrity sha512-yMqGUQVVCkD4tqjOJf3TnrvaaHDMYp4VlUSObbkIiuCPe/ofdMBFIAcBbCSRFWOnos6qRiTVStDwqPLUclaxIw==
 
 globalthis@^1.0.3:
   version "1.0.3"
@@ -3118,10 +3118,10 @@ json5@^2.2.3:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
-kareem@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/kareem/-/kareem-3.0.0.tgz#b1abcd504a01d45d712d311bf2178ce2bc0081bb"
-  integrity sha512-RKhaOBSPN8L7y4yAgNhDT2602G5FD6QbOIISbjN9D6mjHPeqeg7K+EB5IGSU5o81/X2Gzm3ICnAvQW3x3OP8HA==
+kareem@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/kareem/-/kareem-3.2.0.tgz#8f69b25f9ceac80e9bc46b391008da7fc93d4ab0"
+  integrity sha512-VS8MWZz/cT+SqBCpVfNN4zoVz5VskR3N4+sTmUXme55e9avQHntpwpNq0yjnosISXqwJ3AQVjlbI4Dyzv//JtA==
 
 keyv@^4.5.4:
   version "4.5.4"
@@ -3374,12 +3374,12 @@ mongodb@~7.0:
     bson "^7.0.0"
     mongodb-connection-string-url "^7.0.0"
 
-mongoose@^9.1.5:
-  version "9.1.5"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-9.1.5.tgz#55c63831649e5f98a07722fe6a04082e9118f89e"
-  integrity sha512-N6gypEO+wLmZp8kCYNQmrEWxVMT0KhyHvVttBZoKA/1ngY7aUsBjqHzCPtDgz+i8JAnqMOiEKmuJIDEQu1b9Dw==
+mongoose@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-9.2.2.tgz#4063b410a7284ea19ba22f9e9243d5baeb163ba3"
+  integrity sha512-e06XdPPlH/L9aEq4vcnqIz5AxFFdfhlqrmymYDO7fZwnqwVp/u8pAH/cCEvvpXg0VlV0Tt5qwu6RUk8lhu6ifg==
   dependencies:
-    kareem "3.0.0"
+    kareem "3.2.0"
     mongodb "~7.0"
     mpath "0.9.0"
     mquery "6.0.0"
@@ -4311,10 +4311,15 @@ tailwind-api-utils@^1.0.3:
     jiti "^2.4.2"
     local-pkg "^1.1.1"
 
-tailwindcss@4.1.18, tailwindcss@^4.1.16:
+tailwindcss@4.1.18:
   version "4.1.18"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.1.18.tgz#f488ba47853abdb5354daf9679d3e7791fc4f4e3"
   integrity sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw==
+
+tailwindcss@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.2.1.tgz#018c4720b58baf98a6bf56b0a12aa797c6cfef1d"
+  integrity sha512-/tBrSQ36vCleJkAOsy9kbNTgaxvGbyOamC30PRePTQe/o1MFwEKHQk4Cn7BNGaPtjp+PuUrByJehM1hgxfq4sw==
 
 tapable@^2.2.0:
   version "2.2.1"
