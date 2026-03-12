@@ -164,10 +164,10 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
-"@cyberalien/svg-utils@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@cyberalien/svg-utils/-/svg-utils-1.1.1.tgz#b0593aa0d641bb26a0a19c9790374d858bd78f15"
-  integrity sha512-i05Cnpzeezf3eJAXLx7aFirTYYoq5D1XUItp1XsjqkerNJh//6BG9sOYHbiO7v0KYMvJAx3kosrZaRcNlQPdsA==
+"@cyberalien/svg-utils@^1.2.4":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@cyberalien/svg-utils/-/svg-utils-1.2.6.tgz#0dc08df6861fecd774a55084f9bd3016a244c5bf"
+  integrity sha512-x24BZpZ//OQZebYowWV8muilk9p4DJBGDYCVxeFiX+T/68VLKFJNBqSrJZ/XBNgmcQz3RCf4GjWj0DSt2NfM6w==
   dependencies:
     "@iconify/types" "^2.0.0"
 
@@ -353,27 +353,27 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify/tailwind4@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@iconify/tailwind4/-/tailwind4-1.2.1.tgz#41e3c6ad2f172165c994f2119eeb7f468f944e4e"
-  integrity sha512-Hd7k8y7uzT3hk8ltw0jGku0r0wA8sc3d2iMvVTYv/9tMxBb+frZtWZGD9hDMU3EYuE+lMn58wi2lS8R2ZbwFcQ==
+"@iconify/tailwind4@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@iconify/tailwind4/-/tailwind4-1.2.3.tgz#ae6e0a554571e0ea63989d50eda0c9e2723ec3b5"
+  integrity sha512-z8SKiMHRASJKF/IY//87MF88lcB7ulxh8vlhQXXLWsBkNtOh6ese9R41MyGpQeqXdRvQVt+/fX2glQtHFjQ+MA==
   dependencies:
-    "@iconify/tools" "^5.0.2"
+    "@iconify/tools" "^5.0.5"
     "@iconify/types" "^2.0.0"
     "@iconify/utils" "^3.1.0"
 
-"@iconify/tools@^5.0.2":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@iconify/tools/-/tools-5.0.3.tgz#0b1b778fb7d26173e0829e47287e85bc76234aa4"
-  integrity sha512-W5nbH5fNv20TvU49Al19Foos/ViAnmppbCNV9ieGl6/dRMDRzxeFol6peXX/NAgaOytQwZZxTTJRq/Kxd4eWsA==
+"@iconify/tools@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@iconify/tools/-/tools-5.0.5.tgz#10cd35ef2e31ca519a963554c7d5874427dcc8a1"
+  integrity sha512-JE3uqne+l89kggZYKIukaYDIae4lHKMNVDg7Oc+L+8rPwiMcfD5C56YLWyynyH/ib6I9xDFH1aamdfoL+m7OFA==
   dependencies:
-    "@cyberalien/svg-utils" "^1.1.1"
+    "@cyberalien/svg-utils" "^1.2.4"
     "@iconify/types" "^2.0.0"
     "@iconify/utils" "^3.1.0"
     fflate "^0.8.2"
-    modern-tar "^0.7.3"
+    modern-tar "^0.7.5"
     pathe "^2.0.3"
-    svgo "^4.0.0"
+    svgo "^4.0.1"
 
 "@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
@@ -3273,10 +3273,10 @@ mlly@^1.7.4, mlly@^1.8.0:
     pkg-types "^1.3.1"
     ufo "^1.6.1"
 
-modern-tar@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/modern-tar/-/modern-tar-0.7.3.tgz#6c302e229040f37fd359e37d1930fdd6ff9fc57c"
-  integrity sha512-4W79zekKGyYU4JXVmB78DOscMFaJth2gGhgfTl2alWE4rNe3nf4N2pqenQ0rEtIewrnD79M687Ouba3YGTLOvg==
+modern-tar@^0.7.5:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/modern-tar/-/modern-tar-0.7.5.tgz#d932328f83a9fe97ebf72365188cef7e90ba6e78"
+  integrity sha512-YTefgdpKKFgoTDbEUqXqgUJct2OG6/4hs4XWLsxcHkDLj/x/V8WmKIRppPnXP5feQ7d1vuYWSp3qKkxfwaFaxA==
 
 mongodb-connection-string-url@^7.0.0:
   version "7.0.1"
@@ -4191,7 +4191,7 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svgo@^4.0.0:
+svgo@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-4.0.1.tgz#c82dacd04ee9f1d55cd4e0b7f9a214c86670e3ee"
   integrity sha512-XDpWUOPC6FEibaLzjfe0ucaV0YrOjYotGJO1WpF0Zd+n6ZGEQUsSugaoLq9QkEZtAfQIxT42UChcssDVPP3+/w==
