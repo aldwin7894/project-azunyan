@@ -2,6 +2,8 @@
 
 import Card from "@/components/common/Card";
 import Modal from "@/components/common/Modal";
+import SearchInput from "@/components/common/SearchInputButton";
+import SearchModal from "@/components/common/SearchModal";
 import { TUserSchema } from "@/models/User";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +12,7 @@ import { useRef, useState } from "react";
 type Props = {
   id: number;
   image: string;
+  bannerImage: string;
   title: string;
   currentProgress: number;
   totalEpisodes: number;
@@ -21,6 +24,7 @@ type Props = {
 export default function AnimeEntry({
   id,
   image,
+  bannerImage,
   title,
   currentProgress,
   totalEpisodes,
@@ -28,14 +32,24 @@ export default function AnimeEntry({
   status,
 }: Readonly<Props>) {
   const [currentRating, setCurrentRating] = useState(rating ?? 0);
+  const [searchType, setSearchType] = useState<
+    "mal" | "trakt" | "simkl" | undefined
+  >();
+
   const editModal = useRef<HTMLDialogElement>(null);
   const episodeModal = useRef<HTMLDialogElement>(null);
+  const searchModal = useRef<HTMLDialogElement>(null);
 
   const handleUpdateEpisode = () => {
     console.info("TODO: INTEGRATE UPDATE EPISODE");
   };
   const handleUpdateMapping = () => {
     console.info("TODO: INTEGRATE UPDATE MAPPING");
+  };
+
+  const showSearchModal = (type: "mal" | "trakt" | "simkl") => {
+    setSearchType(type);
+    searchModal.current?.showModal();
   };
 
   return (
@@ -64,7 +78,7 @@ export default function AnimeEntry({
             {currentProgress} / {totalEpisodes}
             <button
               className="invisible ml-1 group-hover:visible"
-              onClick={() => episodeModal.current?.showModal()}
+              onClick={() => showSearchModal("mal")}
             >
               +
             </button>
@@ -77,11 +91,24 @@ export default function AnimeEntry({
 
       <Modal
         ref={editModal}
-        title={`Update ${title}`}
+        title={title}
         saveLabel="Confirm"
         onSave={handleUpdateMapping}
+        headerImage={bannerImage}
       >
-        <div className="flex flex-col gap-2">
+        <div className="absolute top-20 left-7">
+          <Image
+            loading="lazy"
+            src={image}
+            alt={title}
+            quality={100}
+            width={230}
+            height={326}
+            className="sticky rounded-xs"
+          />
+        </div>
+
+        <div className="ml-70 flex flex-col gap-2">
           <div className="rating">
             {Array.from({ length: 10 }, (_, i) => (
               <input
@@ -123,11 +150,14 @@ export default function AnimeEntry({
               </Link>
             }
           ></Card>
-          <Card title="MyAnimeList">test</Card>
+          <Card title="MyAnimeList">
+            <SearchInput onClick={() => showSearchModal("mal")} />
+          </Card>
           <Card title="SIMKL">test</Card>
           <Card title="Trakt">test</Card>
         </div>
       </Modal>
+
       <Modal
         ref={episodeModal}
         title="Update Watched Progress"
@@ -137,6 +167,12 @@ export default function AnimeEntry({
         Update watched progress to episode{" "}
         <strong>{currentProgress + 1}</strong>?
       </Modal>
+
+      <SearchModal
+        ref={searchModal}
+        searchType={searchType}
+        onClose={() => setSearchType(undefined)}
+      />
     </>
   );
 }

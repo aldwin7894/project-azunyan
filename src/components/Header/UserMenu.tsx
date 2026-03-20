@@ -49,7 +49,6 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
   };
   const redirectToSimklAuth = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    console.log(session?.simkl);
     if (!session.simkl?.aut) {
       router.push(
         `https://simkl.com/oauth/authorize?response_type=code&client_id=${process.env.NEXT_PUBLIC_SIMKL_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_HOST}/simkl/auth`,
@@ -58,7 +57,6 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
   };
   const redirectToTraktAuth = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    console.log(session?.trakt);
     if (!session.trakt?.aut) {
       router.push(
         `https://trakt.tv/oauth/authorize?response_type=code&client_id=${process.env.NEXT_PUBLIC_TRAKT_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_HOST}/trakt/auth`,
@@ -156,7 +154,7 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
         </div>
       </Modal>
 
-      <ul className="menu dropdown-content menu-sm z-1 mt-3 w-52 rounded-box bg-base-300 p-2 shadow-sm">
+      <ul className="menu dropdown-content menu-sm rounded-box bg-base-300 z-1 mt-3 w-52 p-2 shadow-sm">
         <li>
           <a onClick={() => settingsModal.current?.showModal()} href="#">
             Settings

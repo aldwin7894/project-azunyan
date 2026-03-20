@@ -8,5 +8,5 @@ export default async function fetcher<JSON = unknown>(
       "content-type": "application/json",
     },
     ...init,
-  }).then(res => res.json());
+  }).then(res => res.json() as JSON);
 }

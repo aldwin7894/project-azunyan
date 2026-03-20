@@ -1,4 +1,4 @@
-import { TMALAuthResponse } from "@/types/myanimelist";
+import { TMALAuthResponse, TMALSearchResponse } from "@/types/myanimelist";
 import axios, { AxiosInstance } from "axios";
 
 export const MyAnimeListClient = (Authorization: string | null = null) =>
@@ -8,6 +8,7 @@ export const MyAnimeListClient = (Authorization: string | null = null) =>
       "Content-Type": "application/json",
       Accept: "application/json",
       Authorization,
+      "X-MAL-CLIENT-ID": process.env.NEXT_PUBLIC_MAL_CLIENT_ID as string,
     },
     timeout: 60000,
   });
@@ -68,6 +69,21 @@ export const refreshMALToken = async (
 
 export const getMALUserDetails = async (client: AxiosInstance) => {
   const res = await client.get("/users/@me");
+  return res.data;
+};
+
+export const searchAnime = async (
+  client: AxiosInstance,
+  payload: {
+    q: string;
+    limit: string;
+    offset: string;
+    fields: string;
+  },
+): Promise<TMALSearchResponse> => {
+  const params = new URLSearchParams(payload);
+  const res = await client.get(`/anime?${params.toString()}`);
+
   return res.data;
 };
 

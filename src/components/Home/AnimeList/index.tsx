@@ -1,9 +1,9 @@
-import { TAnimeEntry } from "@/types/anilist";
+import { TALAnimeEntry } from "@/types/anilist";
 import AnimeEntry from "./AnimeEntry";
 import { TUserSchema } from "@/models/User";
 
 type Props = {
-  data?: TAnimeEntry[];
+  data?: TALAnimeEntry[];
   user?: TUserSchema;
 };
 export default function AnimeList({ data, user }: Readonly<Props>) {
@@ -13,6 +13,7 @@ export default function AnimeList({ data, user }: Readonly<Props>) {
         <AnimeEntry
           id={anime.mediaId}
           image={anime.media.coverImage.large}
+          bannerImage={anime.media.bannerImage}
           currentProgress={anime.progress}
           rating={anime.score}
           title={anime.media.title.userPreferred}

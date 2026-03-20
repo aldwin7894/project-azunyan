@@ -1,9 +1,22 @@
-import { Client, cacheExchange, fetchExchange, gql } from "urql/core";
+import { Client, fetchExchange, gql } from "urql/core";
+import { cacheExchange } from "@urql/exchange-graphcache";
+import schema from "../../anilist-schema.json";
 
 const AnilistClient = (accessToken: string) => {
   return new Client({
     url: "https://graphql.anilist.co",
-    exchanges: [cacheExchange, fetchExchange],
+    exchanges: [
+      cacheExchange({
+        schema,
+        keys: {
+          MediaListCollection: () => null,
+          MediaCoverImage: () => null,
+          MediaTitle: () => null,
+          MediaListGroup: () => null,
+        },
+      }),
+      fetchExchange,
+    ],
     preferGetMethod: false,
     fetchOptions: {
       headers: {
@@ -44,6 +57,7 @@ export const UserAnimeListQuery = gql`
       coverImage {
         large
       }
+      bannerImage
       status(version: 2)
       episodes
     }

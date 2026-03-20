@@ -1,16 +1,16 @@
-export type TAnimeList = {
+export type TALAnimeList = {
   Watching: {
     hasNextChunk: boolean;
     lists: [
       {
         name: string;
-        entries: [TAnimeEntry];
+        entries: [TALAnimeEntry];
       },
     ];
   };
 };
 
-export type TAnimeEntry = {
+export type TALAnimeEntry = {
   id: number;
   mediaId: number;
   status: string;
@@ -25,6 +25,7 @@ export type TAnimeEntry = {
     coverImage: {
       large: string;
     };
+    bannerImage: string;
     status: string;
     episodes: number;
   };
