@@ -1325,7 +1325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/core@npm:^6.0.0, @urql/core@npm:^6.0.1":
+"@urql/core@npm:^6.0.1":
   version: 6.0.1
   resolution: "@urql/core@npm:6.0.1"
   dependencies:
@@ -1335,16 +1335,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/exchange-graphcache@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "@urql/exchange-graphcache@npm:8.1.0"
+"@urql/exchange-graphcache@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@urql/exchange-graphcache@npm:9.0.0"
   dependencies:
     "@0no-co/graphql.web": "npm:^1.0.13"
-    "@urql/core": "npm:^6.0.0"
+    "@urql/core": "npm:^6.0.1"
     wonka: "npm:^6.3.2"
   peerDependencies:
     "@urql/core": ^6.0.0
-  checksum: 10/2bc2f756045b326017c152e93abe57f6d14926ace38b2d4309d00359c784b417c1fab7ade1a5dcc96296401f7d0ac9bcbf7b14e2cfa72656b04ff3e6e0883f76
+  checksum: 10/128d10ca1870f16779058014ca01e3c7da0670c7abe5d43f40bec8f50d59f1a83a3b6cda9a408f221e4519675536ecece9ff6efe0693cba44114c131ba31242e
   languageName: node
   linkType: hard
 
@@ -4899,7 +4899,7 @@ __metadata:
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
     "@uidotdev/usehooks": "npm:^2.4.1"
-    "@urql/exchange-graphcache": "npm:^8.1.0"
+    "@urql/exchange-graphcache": "npm:^9.0.0"
     "@urql/introspection": "npm:^1.2.1"
     axios: "npm:^1.13.6"
     clsx: "npm:^2.1.1"
