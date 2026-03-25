@@ -796,12 +796,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:16.1.7":
-  version: 16.1.7
-  resolution: "@next/eslint-plugin-next@npm:16.1.7"
+"@next/eslint-plugin-next@npm:16.2.1":
+  version: 16.2.1
+  resolution: "@next/eslint-plugin-next@npm:16.2.1"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10/66a4ced42f0ef5070cc8330633b49f43da8d7c316fdf03c692b681c5d0614bd3332643169eb0545b2be3edf59aa1488d0b559cc4506649a10f1de2af459a18c6
+  checksum: 10/8892f8ea6b2a642d9284f05098827f6c15acf3c7e2ff592430080355f8eb3cec7a70ba7543960819d69eff4eba75430eb6ce2fee4c8918abf0d8a9366fa0a59a
   languageName: node
   linkType: hard
 
@@ -1325,7 +1325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/core@npm:^6.0.0, @urql/core@npm:^6.0.1":
+"@urql/core@npm:^6.0.1":
   version: 6.0.1
   resolution: "@urql/core@npm:6.0.1"
   dependencies:
@@ -1335,16 +1335,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/exchange-graphcache@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "@urql/exchange-graphcache@npm:8.1.0"
+"@urql/exchange-graphcache@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@urql/exchange-graphcache@npm:9.0.0"
   dependencies:
     "@0no-co/graphql.web": "npm:^1.0.13"
-    "@urql/core": "npm:^6.0.0"
+    "@urql/core": "npm:^6.0.1"
     wonka: "npm:^6.3.2"
   peerDependencies:
     "@urql/core": ^6.0.0
-  checksum: 10/2bc2f756045b326017c152e93abe57f6d14926ace38b2d4309d00359c784b417c1fab7ade1a5dcc96296401f7d0ac9bcbf7b14e2cfa72656b04ff3e6e0883f76
+  checksum: 10/128d10ca1870f16779058014ca01e3c7da0670c7abe5d43f40bec8f50d59f1a83a3b6cda9a408f221e4519675536ecece9ff6efe0693cba44114c131ba31242e
   languageName: node
   linkType: hard
 
@@ -2567,11 +2567,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:16.1.7":
-  version: 16.1.7
-  resolution: "eslint-config-next@npm:16.1.7"
+"eslint-config-next@npm:16.2.1":
+  version: 16.2.1
+  resolution: "eslint-config-next@npm:16.2.1"
   dependencies:
-    "@next/eslint-plugin-next": "npm:16.1.7"
+    "@next/eslint-plugin-next": "npm:16.2.1"
     eslint-import-resolver-node: "npm:^0.3.6"
     eslint-import-resolver-typescript: "npm:^3.5.2"
     eslint-plugin-import: "npm:^2.32.0"
@@ -2586,7 +2586,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/5e088f7686bee2b2d50bd9e672c47f18c70807c3695fc54fe290b19d7b179cdf3c8b60e06713b969c164d3333408d40115197a1b3bdc8cbcc0eba8cc3ffba1fb
+  checksum: 10/3622048ff1883f801c14a21205e9f92fd83172362d6d006fc7a32ea178687a9e11aff0db3aa5fbfb86b32541b03ac127f12da8da12e8fff4430f4757e0ceecfd
   languageName: node
   linkType: hard
 
@@ -3307,10 +3307,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.12.0":
-  version: 16.12.0
-  resolution: "graphql@npm:16.12.0"
-  checksum: 10/e299bc97cca178e549c8c1ed4cb164f631f07be987d3657f76cdf18c0250040cc0d456d4b6d41c87b855cac97b15a62ed345557527efcb0546492895a893bb87
+"graphql@npm:^16.13.1":
+  version: 16.13.1
+  resolution: "graphql@npm:16.13.1"
+  checksum: 10/a42f857f60351e1f4665aa5bc5524796d3f45bf81793e6db932f902aff769b0488dafaa1d9c07bddda7122a1f6d0b0105fab12d38992f6b6fb81fc3d7ced1afc
   languageName: node
   linkType: hard
 
@@ -4899,19 +4899,19 @@ __metadata:
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
     "@uidotdev/usehooks": "npm:^2.4.1"
-    "@urql/exchange-graphcache": "npm:^8.1.0"
+    "@urql/exchange-graphcache": "npm:^9.0.0"
     "@urql/introspection": "npm:^1.2.1"
     axios: "npm:^1.13.6"
     clsx: "npm:^2.1.1"
     daisyui: "npm:^5.5.19"
     dayjs: "npm:^1.11.19"
     eslint: "npm:9.39.1"
-    eslint-config-next: "npm:16.1.7"
+    eslint-config-next: "npm:16.2.1"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.5"
     eslint-plugin-tailwindcss: "npm:^4.0.0-beta.0"
     globals: "npm:^17.4.0"
-    graphql: "npm:^16.12.0"
+    graphql: "npm:^16.13.1"
     iron-session: "npm:^8.0.4"
     lodash: "npm:^4.17.23"
     mongoose: "npm:^9.3.1"
@@ -4924,7 +4924,7 @@ __metadata:
     react-dom: "npm:^19.2.4"
     simple-zustand-devtools: "npm:^1.1.0"
     swr: "npm:^2.3.6"
-    tailwindcss: "npm:^4.2.1"
+    tailwindcss: "npm:^4.2.2"
     typescript: "npm:^5.9.3"
     urql: "npm:^5.0.1"
     zustand: "npm:^5.0.11"
@@ -5775,10 +5775,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.2.1, tailwindcss@npm:^4.2.1":
+"tailwindcss@npm:4.2.1":
   version: 4.2.1
   resolution: "tailwindcss@npm:4.2.1"
   checksum: 10/624a7b51b575f5c923a33b89d8e5864bb655a193f977e1b3ea8b412211a5e5f8bf553d411d042b87a4e6fd97fdc65fa135fd59034f3cada74bfe74d164307dfe
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "tailwindcss@npm:4.2.2"
+  checksum: 10/f468b441d32b7278e7e2639b0f95f59fb8a52678e8c3a027f636ec51006ed32f68aeb2e66eaf81b958b234745d2ccae4757e4ba5dda23c5e158065060f90aa78
   languageName: node
   linkType: hard
 
