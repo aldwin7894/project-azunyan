@@ -43,7 +43,7 @@
     "@urql/introspection": "^1.2.1",
     "daisyui": "^5.5.19",
     "eslint": "9.39.1",
-    "eslint-config-next": "16.2.1",
+    "eslint-config-next": "16.2.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-tailwindcss": "^4.0.0-beta.0",
