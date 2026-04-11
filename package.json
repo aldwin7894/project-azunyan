@@ -12,13 +12,13 @@
   "dependencies": {
     "@uidotdev/usehooks": "^2.4.1",
     "@urql/exchange-graphcache": "^9.0.0",
-    "axios": "^1.13.6",
+    "axios": "^1.14.0",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.20",
     "iron-session": "^8.0.4",
     "lodash": "^4.18.1",
     "mongoose": "^9.3.3",
-    "next": "16.2.2",
+    "next": "16.2.3",
     "next-connect": "^1.0.0",
     "oauth-pkce": "^0.0.7",
     "react": "^19",
@@ -29,11 +29,11 @@
     "zustand": "^5.0.12"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.3",
+    "@eslint/compat": "^2.0.4",
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.75",
+    "@iconify-json/simple-icons": "^1.2.77",
     "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/postcss": "^4.2.2",
     "@types/lodash": "^4.17.24",
@@ -49,10 +49,10 @@
     "eslint-plugin-tailwindcss": "^4.0.0-beta.0",
     "globals": "^17.4.0",
     "graphql": "^16.13.2",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.9",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "engines": {
     "node": "24.14.0",
