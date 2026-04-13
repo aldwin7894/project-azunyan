@@ -37,7 +37,7 @@
     "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/postcss": "^4.2.2",
     "@types/lodash": "^4.17.24",
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@urql/introspection": "^1.2.1",
