@@ -4951,7 +4951,7 @@ __metadata:
     swr: "npm:^2.4.1"
     tailwindcss: "npm:^4.2.2"
     typescript: "npm:^6.0.2"
-    urql: "npm:^5.0.1"
+    urql: "npm:^5.0.2"
     zustand: "npm:^5.0.12"
   languageName: unknown
   linkType: soft
@@ -6152,16 +6152,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"urql@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "urql@npm:5.0.1"
+"urql@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "urql@npm:5.0.2"
   dependencies:
     "@urql/core": "npm:^6.0.1"
     wonka: "npm:^6.3.2"
   peerDependencies:
     "@urql/core": ^6.0.0
     react: ">= 16.8.0"
-  checksum: 10/95c1d58c41f49ff4db39a6343db9a7bd9b78f617943802d696fb044371ecbba0a188bb4c2f8a4d86a18f1f382185ea8cf6101cc9117149038641b3ef5d78c6a6
+  checksum: 10/09ebba97379d78762de50dc7f2cccd4042b05799aeb29f67cffe30fdd738267a4bfe716e6f4c127d092a3164a83da9cece542528342b4adbdc7ffdcec8c3a603
   languageName: node
   linkType: hard
 
