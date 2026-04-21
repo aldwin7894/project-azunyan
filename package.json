@@ -25,11 +25,11 @@
     "react-dom": "^19.2.5",
     "simple-zustand-devtools": "^1.1.0",
     "swr": "^2.4.1",
-    "urql": "^5.0.1",
+    "urql": "^5.0.2",
     "zustand": "^5.0.12"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.4",
+    "@eslint/compat": "^2.0.5",
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
     "@iconify-json/mdi": "^1.2.3",
@@ -47,10 +47,10 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-tailwindcss": "^4.0.0-beta.0",
-    "globals": "^17.4.0",
+    "globals": "^17.5.0",
     "graphql": "^16.13.2",
     "postcss": "^8.5.9",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.2"
   },
