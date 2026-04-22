@@ -455,12 +455,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/simple-icons@npm:^1.2.77":
-  version: 1.2.77
-  resolution: "@iconify-json/simple-icons@npm:1.2.77"
+"@iconify-json/simple-icons@npm:^1.2.79":
+  version: 1.2.79
+  resolution: "@iconify-json/simple-icons@npm:1.2.79"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/65d4423c02659747dfe1fd98f7acbe3d6c0ccd5c855a7031882886e6475aed396ef80c9850fef2530bd15b6bfa844757c443f6e3656de62ed79bbf881463b8e1
+  checksum: 10/ed21f6c4da5e67eff3482590b237104c10f2545630f7b341c6a7df8dfd2da1fd33990ad5d44d24d57f8e239c2011c8e91fd2c6f758a70ee84853e16ba840a96e
   languageName: node
   linkType: hard
 
@@ -1657,14 +1657,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.15.0":
-  version: 1.15.0
-  resolution: "axios@npm:1.15.0"
+"axios@npm:^1.15.1":
+  version: 1.15.1
+  resolution: "axios@npm:1.15.1"
   dependencies:
     follow-redirects: "npm:^1.15.11"
     form-data: "npm:^4.0.5"
     proxy-from-env: "npm:^2.1.0"
-  checksum: 10/d39a2c0ebc7ff4739401b282e726cc2673377949d6c46d60eb619458f8d7a2f7eadbcada7097f4dbc7d5c59abb4d3bf6fac33d474412bc3415d3f5aa7ed45530
+  checksum: 10/bfa286e29d1866695426b45c9a25ef21975669e500a8511a01e2fe5b9c4f734906701266d214b562dc525e463bae2bbba24c8e9e10c214f0d4f4c669e9372a7f
   languageName: node
   linkType: hard
 
@@ -4061,10 +4061,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kareem@npm:3.2.0":
-  version: 3.2.0
-  resolution: "kareem@npm:3.2.0"
-  checksum: 10/cdf3ff207ed602efaa2efc6005c2e8836266f01348a61d8e96ad2e87babbaaa96c6aecb4d58071e18b253d4a07765353f4795564dcc7a1ad0e7ef9f3bafed824
+"kareem@npm:3.3.0":
+  version: 3.3.0
+  resolution: "kareem@npm:3.3.0"
+  checksum: 10/28fa51f594531ddf88b00e421156fd6e2b4d3c0fe069f908cc705587a2c3ba55ac90c7dbe6ffd867259b9116efcf0d3efdaab7b6a9ad711259d186c88ac18393
   languageName: node
   linkType: hard
 
@@ -4435,17 +4435,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:^9.4.1":
-  version: 9.4.1
-  resolution: "mongoose@npm:9.4.1"
+"mongoose@npm:^9.5.0":
+  version: 9.5.0
+  resolution: "mongoose@npm:9.5.0"
   dependencies:
-    kareem: "npm:3.2.0"
+    kareem: "npm:3.3.0"
     mongodb: "npm:~7.1"
     mpath: "npm:0.9.0"
     mquery: "npm:6.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10/1a2d90455f7bae9c1d3206b07edcff8a5a26da85ad978216fad553798450ca36a864e5c7ecca533ca41d409072fa51bff5d89dc35e9f9b1f2709dd232852d8fd
+  checksum: 10/5d3add1ae9dbfb26d749481cf6ea343a7f84a35e0a68e1fb042d8aea8cc82fe4fec6a849b11ffec042db5b7796e07484c0ec5708ef52254961978f2195e1c74b
   languageName: node
   linkType: hard
 
@@ -4872,14 +4872,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.9":
-  version: 8.5.9
-  resolution: "postcss@npm:8.5.9"
+"postcss@npm:^8.5.10":
+  version: 8.5.10
+  resolution: "postcss@npm:8.5.10"
   dependencies:
     nanoid: "npm:^3.3.11"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10/b34661c6efca87f7bf747c6c943435e4bfef7617a238c3719103e607c605d16720682fb121b7ebd4f7f748228dfdf8711b82f7ffed80a5c4a9249c070ed5fd87
+  checksum: 10/7eac6169e535b63c8412e94d4f6047fc23efa3e9dde804b541940043c831b25f1cd867d83cd2c4371ad2450c8abcb42c208aa25668c1f0f3650d7f72faf711a8
   languageName: node
   linkType: hard
 
@@ -4916,7 +4916,7 @@ __metadata:
     "@eslint/eslintrc": "npm:^3.3.5"
     "@eslint/js": "npm:^10.0.1"
     "@iconify-json/mdi": "npm:^1.2.3"
-    "@iconify-json/simple-icons": "npm:^1.2.77"
+    "@iconify-json/simple-icons": "npm:^1.2.79"
     "@iconify/tailwind4": "npm:^1.2.3"
     "@tailwindcss/postcss": "npm:^4.2.2"
     "@types/lodash": "npm:^4.17.24"
@@ -4926,7 +4926,7 @@ __metadata:
     "@uidotdev/usehooks": "npm:^2.4.1"
     "@urql/exchange-graphcache": "npm:^9.0.0"
     "@urql/introspection": "npm:^1.2.1"
-    axios: "npm:^1.15.0"
+    axios: "npm:^1.15.1"
     clsx: "npm:^2.1.1"
     daisyui: "npm:^5.5.19"
     dayjs: "npm:^1.11.20"
@@ -4939,18 +4939,18 @@ __metadata:
     graphql: "npm:^16.13.2"
     iron-session: "npm:^8.0.4"
     lodash: "npm:^4.18.1"
-    mongoose: "npm:^9.4.1"
+    mongoose: "npm:^9.5.0"
     next: "npm:16.2.3"
     next-connect: "npm:^1.0.0"
     oauth-pkce: "npm:^0.0.7"
-    postcss: "npm:^8.5.9"
+    postcss: "npm:^8.5.10"
     prettier: "npm:^3.8.3"
     react: "npm:^19"
     react-dom: "npm:^19.2.5"
     simple-zustand-devtools: "npm:^1.1.0"
     swr: "npm:^2.4.1"
     tailwindcss: "npm:^4.2.2"
-    typescript: "npm:^6.0.2"
+    typescript: "npm:^6.0.3"
     urql: "npm:^5.0.2"
     zustand: "npm:^5.0.12"
   languageName: unknown
@@ -6064,23 +6064,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "typescript@npm:6.0.2"
+"typescript@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "typescript@npm:6.0.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/b9fc2fcee7ee8e5ca6f5138181964550531e18e2d20ecb71b802d4d495881e3444e0ef94cbb6e84eb2ba41e913f6feae3ca33cc722b32e6e6dfadb32d23b80e6
+  checksum: 10/0ef2357a4cffd916b52b683a021cdab0f81eea4e9aa35f2d254581c9a5106da02224e3392e1b0ed42b7a48f80c966e5f52b8e1a27941fa0523c1705a9c2e0330
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^6.0.2#optional!builtin<compat/typescript>":
-  version: 6.0.2
-  resolution: "typescript@patch:typescript@npm%3A6.0.2#optional!builtin<compat/typescript>::version=6.0.2&hash=5786d5"
+"typescript@patch:typescript@npm%3A^6.0.3#optional!builtin<compat/typescript>":
+  version: 6.0.3
+  resolution: "typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/e5501dfcf8c5b6b9a61f6fa53decc40187cebe3a2b7b2bd51c615007ad4cf6d58298461fef63294f6be9d5f2f33019b2a2e2bf02d9cb7d7f6ec94372bf24ffa2
+  checksum: 10/22b67a18dafedf9b1468b64ca20d9aa02ea61d449b65413d8aa6552aeb63f52ef369e86beb25b6b4c91a803d9726ee5c196f391a9b64201263263410a4223ee6
   languageName: node
   linkType: hard
 
