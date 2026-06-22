@@ -26,7 +26,7 @@
     "simple-zustand-devtools": "^1.1.0",
     "swr": "^2.4.1",
     "urql": "^5.0.2",
-    "zustand": "^5.0.13"
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@eslint/compat": "^2.0.5",
