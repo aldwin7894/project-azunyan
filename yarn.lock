@@ -3366,10 +3366,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.13.2":
-  version: 16.13.2
-  resolution: "graphql@npm:16.13.2"
-  checksum: 10/9ede86f0a7227d47a41e2076e0132839f66fbd14899abfd818d7de2ab81076ee249c8788ad42243367d68a027a8763cc4c7be2e441ccfb03a8549490c7b66c2f
+"graphql@npm:^17.0.1":
+  version: 17.0.1
+  resolution: "graphql@npm:17.0.1"
+  checksum: 10/f59d39448ec380e0378958cf834905e12e86cbcbe06bc6739a3d903b575f30a87cffee98bd838c40d2546253278e3faf0c4ec848817cda17f663185c511a80ae
   languageName: node
   linkType: hard
 
@@ -5016,7 +5016,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.5.6"
     eslint-plugin-tailwindcss: "npm:^4.0.0-beta.0"
     globals: "npm:^17.6.0"
-    graphql: "npm:^16.13.2"
+    graphql: "npm:^17.0.1"
     iron-session: "npm:^8.0.4"
     lodash: "npm:^4.18.1"
     mongoose: "npm:^9.6.1"
