@@ -2035,10 +2035,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^5.5.23":
-  version: 5.5.23
-  resolution: "daisyui@npm:5.5.23"
-  checksum: 10/4a5be0c2c03b337d9d15c9c19440210c3ea1b55466ded0d6c08278cf7a8c0d81868eb711d074a194feb8311adc9f400a32092bfc09e9352fa552c3071fc52141
+"daisyui@npm:^5.6.7":
+  version: 5.6.7
+  resolution: "daisyui@npm:5.6.7"
+  checksum: 10/e55588b9884c16c4d3374e68494fc9f950925d438867bde6eed9bd35204f8b99ca0a18e8b804457f0f31be6b5ef6dd196615db9f8a97de1ebbab633ba9f0bcd6
   languageName: node
   linkType: hard
 
@@ -5008,7 +5008,7 @@ __metadata:
     "@urql/introspection": "npm:^1.2.1"
     axios: "npm:^1.18.1"
     clsx: "npm:^2.1.1"
-    daisyui: "npm:^5.5.23"
+    daisyui: "npm:^5.6.7"
     dayjs: "npm:^1.11.21"
     eslint: "npm:9.39.1"
     eslint-config-next: "npm:16.2.5"
