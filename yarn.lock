@@ -963,6 +963,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@standard-schema/spec@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@standard-schema/spec@npm:1.1.0"
+  checksum: 10/a209615c9e8b2ea535d7db0a5f6aa0f962fd4ab73ee86a46c100fb78116964af1f55a27c1794d4801e534a196794223daa25ff5135021e03c7828aa3d95e1763
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:0.5.15":
   version: 0.5.15
   resolution: "@swc/helpers@npm:0.5.15"
@@ -4506,17 +4513,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:^9.6.1":
-  version: 9.6.1
-  resolution: "mongoose@npm:9.6.1"
+"mongoose@npm:^9.7.3":
+  version: 9.7.3
+  resolution: "mongoose@npm:9.7.3"
   dependencies:
+    "@standard-schema/spec": "npm:^1.1.0"
     kareem: "npm:3.3.0"
     mongodb: "npm:~7.2"
     mpath: "npm:0.9.0"
     mquery: "npm:6.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10/73a1f81e1419a2d9fcfeeb113d4d57a100f2695732801f340faa0959b9fb0440463cfb20209085e89ab04234497cf2df82a0b323b5d7c3da1a9309e8afa2756c
+  checksum: 10/d79b8d695785e4187f8dad5c8e1487397e4fce948fa3992fc3638182b5c140348c54e5f98ddad844ca8eceae54b3975c2fca4da8f66278ea49f73deae0e059d7
   languageName: node
   linkType: hard
 
@@ -5019,7 +5027,7 @@ __metadata:
     graphql: "npm:^17.0.1"
     iron-session: "npm:^8.0.4"
     lodash: "npm:^4.18.1"
-    mongoose: "npm:^9.6.1"
+    mongoose: "npm:^9.7.3"
     next: "npm:16.2.6"
     next-connect: "npm:^1.0.0"
     oauth-pkce: "npm:^0.0.7"
