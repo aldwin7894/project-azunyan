@@ -850,12 +850,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:16.2.5":
-  version: 16.2.5
-  resolution: "@next/eslint-plugin-next@npm:16.2.5"
+"@next/eslint-plugin-next@npm:16.2.10":
+  version: 16.2.10
+  resolution: "@next/eslint-plugin-next@npm:16.2.10"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10/b2d29783aeddf21b909c2d724b052407c24119cf9b5c07840309a60ef89762cc3b74937de27ff3ed37e357285b33041bbc449096a9b0eca777fb084fa8c5a942
+  checksum: 10/0693044cb9d10fa2745a84845f919dced6468ad7e94bc3f14dc68af37004b04c925b284006f5a619c2788453c49ff4af9ff10b9e89af62a8ba7000300ca670e3
   languageName: node
   linkType: hard
 
@@ -2719,11 +2719,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:16.2.5":
-  version: 16.2.5
-  resolution: "eslint-config-next@npm:16.2.5"
+"eslint-config-next@npm:16.2.10":
+  version: 16.2.10
+  resolution: "eslint-config-next@npm:16.2.10"
   dependencies:
-    "@next/eslint-plugin-next": "npm:16.2.5"
+    "@next/eslint-plugin-next": "npm:16.2.10"
     eslint-import-resolver-node: "npm:^0.3.6"
     eslint-import-resolver-typescript: "npm:^3.5.2"
     eslint-plugin-import: "npm:^2.32.0"
@@ -2738,7 +2738,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/4bd56e7767578f9e6840b813fe3d993b1f2edf3a53fa3181b2a41e8356b7b91e45d0ccc0e91806776a94e5533b0020bd559c16ba1aa9c48ef8bac0e058708bad
+  checksum: 10/ebbd9a4976606c5c700b1a671789c8a6c0831906280cab3ab2f5b6c0b25bc5dd5316b2a2191e7e2b1db630dd01d24a2452aa6b74b3a63b62a2c50c9e70a6dad2
   languageName: node
   linkType: hard
 
@@ -5130,7 +5130,7 @@ __metadata:
     daisyui: "npm:^5.6.7"
     dayjs: "npm:^1.11.21"
     eslint: "npm:9.39.1"
-    eslint-config-next: "npm:16.2.5"
+    eslint-config-next: "npm:16.2.10"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.6"
     eslint-plugin-tailwindcss: "npm:^4.0.5"
