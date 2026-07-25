@@ -378,7 +378,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^3.3.1, @eslint/eslintrc@npm:^3.3.5":
+"@eslint/eslintrc@npm:^3.3.1":
   version: 3.3.5
   resolution: "@eslint/eslintrc@npm:3.3.5"
   dependencies:
@@ -392,6 +392,23 @@ __metadata:
     minimatch: "npm:^3.1.5"
     strip-json-comments: "npm:^3.1.1"
   checksum: 10/edabb65693d82a88cac3b2cf932a0f825e986b5e0a21ef08782d07e3a61ad87d39db67cfd5aeb146fd5053e5e24e389dbe5649ab22936a71d633c7b32a7e6d86
+  languageName: node
+  linkType: hard
+
+"@eslint/eslintrc@npm:^3.3.6":
+  version: 3.3.6
+  resolution: "@eslint/eslintrc@npm:3.3.6"
+  dependencies:
+    ajv: "npm:^6.14.0"
+    debug: "npm:^4.3.2"
+    espree: "npm:^10.0.1"
+    globals: "npm:^14.0.0"
+    ignore: "npm:^5.2.0"
+    import-fresh: "npm:^3.2.1"
+    js-yaml: "npm:^4.3.0"
+    minimatch: "npm:^3.1.5"
+    strip-json-comments: "npm:^3.1.1"
+  checksum: 10/8d1d501069faf7c1c73e37181ec403dd2d1509f8da85f226531f6a7fdd9a9326fc6d2ea2e8192515992578cf9e7ed87f9d7ce3f1bfc6d0f0e77796d18e0e8ef6
   languageName: node
   linkType: hard
 
@@ -1433,16 +1450,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/core@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "@urql/core@npm:6.0.1"
-  dependencies:
-    "@0no-co/graphql.web": "npm:^1.0.13"
-    wonka: "npm:^6.3.2"
-  checksum: 10/8149af964382f2503071406db3afdfa0d4892deab59deddb956ccd16388046f8081dd964baf48162a8f337243b7804b82281a694999a9c983f1058ac6614cb92
-  languageName: node
-  linkType: hard
-
 "@urql/core@npm:^6.0.2":
   version: 6.0.3
   resolution: "@urql/core@npm:6.0.3"
@@ -1453,16 +1460,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/exchange-graphcache@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@urql/exchange-graphcache@npm:9.0.0"
+"@urql/exchange-graphcache@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "@urql/exchange-graphcache@npm:9.0.1"
   dependencies:
     "@0no-co/graphql.web": "npm:^1.0.13"
-    "@urql/core": "npm:^6.0.1"
+    "@urql/core": "npm:^6.0.2"
     wonka: "npm:^6.3.2"
   peerDependencies:
     "@urql/core": ^6.0.0
-  checksum: 10/128d10ca1870f16779058014ca01e3c7da0670c7abe5d43f40bec8f50d59f1a83a3b6cda9a408f221e4519675536ecece9ff6efe0693cba44114c131ba31242e
+  checksum: 10/fb2502f3ae0c4e00a332d07a49aa550a79f2b95a0dd85e0f92a14de904d6207d03c0c3433a86859e2e8420007a64daf41bf739bf73992d19613dea0d09ac3082
   languageName: node
   linkType: hard
 
@@ -2119,10 +2126,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^5.6.7":
-  version: 5.6.7
-  resolution: "daisyui@npm:5.6.7"
-  checksum: 10/e55588b9884c16c4d3374e68494fc9f950925d438867bde6eed9bd35204f8b99ca0a18e8b804457f0f31be6b5ef6dd196615db9f8a97de1ebbab633ba9f0bcd6
+"daisyui@npm:^5.6.18":
+  version: 5.6.18
+  resolution: "daisyui@npm:5.6.18"
+  checksum: 10/ea05deb0d6e9ef13b1456f727d2f552f5874b720dd2465f383398217e367e7b698161f69c5419a193110dd607269f8b71d43e69c36a3c351f87829db5f0ae39f
   languageName: node
   linkType: hard
 
@@ -2916,9 +2923,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-tailwindcss@npm:^4.0.5":
-  version: 4.0.5
-  resolution: "eslint-plugin-tailwindcss@npm:4.0.5"
+"eslint-plugin-tailwindcss@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "eslint-plugin-tailwindcss@npm:4.2.0"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.37.0"
     postcss: "npm:^8.4.4"
@@ -2931,7 +2938,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/8c6d38cf4c72be2e11e515f0c39877c39a51dbbc4ee1d4910e9d20b9fdb2833bb802dfec88db107fc9fda6f62ea6222684d7d3890d4d6149b741a3dbe58af87f
+  checksum: 10/e3f5b7c7d7f43dc639d8c66871f4d5a0353ff28bb6b4f12b1bb09cc7661989707d4e616c16fb326e465ca957966bf1c84a898b4e055ccd1137cb570fc086585a
   languageName: node
   linkType: hard
 
@@ -4168,6 +4175,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-yaml@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "js-yaml@npm:4.3.0"
+  dependencies:
+    argparse: "npm:^2.0.1"
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: 10/2bcec3a8118d7f744badeb04e14366578d234a736f353d41fe35d2305e4ce2409a8e041d277f07cd6bbc8aaa12128d650a68ce43247072519bede20962d2126f
+  languageName: node
+  linkType: hard
+
 "jsesc@npm:^3.0.2":
   version: 3.1.0
   resolution: "jsesc@npm:3.1.0"
@@ -5113,7 +5131,7 @@ __metadata:
   resolution: "project-azunyan@workspace:."
   dependencies:
     "@eslint/compat": "npm:^2.1.0"
-    "@eslint/eslintrc": "npm:^3.3.5"
+    "@eslint/eslintrc": "npm:^3.3.6"
     "@eslint/js": "npm:^10.0.1"
     "@iconify-json/mdi": "npm:^1.2.3"
     "@iconify-json/simple-icons": "npm:^1.2.87"
@@ -5124,17 +5142,17 @@ __metadata:
     "@types/react": "npm:^19.2.17"
     "@types/react-dom": "npm:^19.2.3"
     "@uidotdev/usehooks": "npm:^2.4.1"
-    "@urql/exchange-graphcache": "npm:^9.0.0"
+    "@urql/exchange-graphcache": "npm:^9.0.1"
     "@urql/introspection": "npm:^1.2.1"
     axios: "npm:^1.18.1"
     clsx: "npm:^2.1.1"
-    daisyui: "npm:^5.6.7"
+    daisyui: "npm:^5.6.18"
     dayjs: "npm:^1.11.21"
     eslint: "npm:9.39.1"
     eslint-config-next: "npm:16.2.10"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.6"
-    eslint-plugin-tailwindcss: "npm:^4.0.5"
+    eslint-plugin-tailwindcss: "npm:^4.2.0"
     globals: "npm:^17.7.0"
     graphql: "npm:^17.0.1"
     iron-session: "npm:^8.0.4"
@@ -5149,7 +5167,7 @@ __metadata:
     react-dom: "npm:^19.2.7"
     simple-zustand-devtools: "npm:^1.1.0"
     swr: "npm:^2.4.2"
-    tailwindcss: "npm:^4.2.4"
+    tailwindcss: "npm:^4.3.3"
     typescript: "npm:^6.0.3"
     urql: "npm:^5.0.3"
     zustand: "npm:^5.0.14"
@@ -6004,10 +6022,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^4.2.4":
-  version: 4.2.4
-  resolution: "tailwindcss@npm:4.2.4"
-  checksum: 10/54734efe725d1717fb9064940d705852448fb91a7fc78399a2d4263dc0fd4c260017baa13362f13f604bbfd4a0a882b83253c0cd6f14fe80454fd916966e8d72
+"tailwindcss@npm:^4.3.3":
+  version: 4.3.3
+  resolution: "tailwindcss@npm:4.3.3"
+  checksum: 10/f6e4972b37f1c411ef0bd89260aabd10d4d953b50c56979f327f5fc8a27bcaf5c62fd4bf55d196d7667085ad276842e1e15b1de1bbfd532da46c2e9073dc8e0d
   languageName: node
   linkType: hard
 
