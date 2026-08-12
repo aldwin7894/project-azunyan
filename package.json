@@ -33,7 +33,7 @@
     "@eslint/eslintrc": "^3.3.6",
     "@eslint/js": "^10.0.1",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.87",
+    "@iconify-json/simple-icons": "^1.2.93",
     "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/postcss": "^4.3.2",
     "@types/lodash": "^4.17.25",
