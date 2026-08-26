@@ -849,13 +849,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:16.3.0":
-  version: 16.3.0
-  resolution: "@next/eslint-plugin-next@npm:16.3.0"
+"@next/eslint-plugin-next@npm:16.3.1":
+  version: 16.3.1
+  resolution: "@next/eslint-plugin-next@npm:16.3.1"
   dependencies:
     "@eslint-community/eslint-utils": "npm:4.9.1"
     fast-glob: "npm:3.3.1"
-  checksum: 10/249b1eeb8853ed8bd378e89f30b7aa96723e567280a1711d443cb195fefa87049e1584a7326e4ee37ba4a7c979d1b16e41cf53b0232f42d53cf1781e5e19b421
+  checksum: 10/f336213f8a6b0c861e34d3e3aa7d2e0edf17814e84a8bdcf882bf8aaca5d788497dde6526f49b39057d43c79a5e0c64b979b2d204c05bf583da7d324164b308f
   languageName: node
   linkType: hard
 
@@ -2127,10 +2127,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^5.7.9":
-  version: 5.7.9
-  resolution: "daisyui@npm:5.7.9"
-  checksum: 10/690b1c5dfbeb7dd6f094bce9d97358a8adee3c323651d63480ec049a09cde6fb56072c1c8377b7c32d3b41fd28988ccd94d92adbfdac9e9761aea66f1058e775
+"daisyui@npm:^5.7.20":
+  version: 5.7.20
+  resolution: "daisyui@npm:5.7.20"
+  checksum: 10/88c2fd3fb3027d5a72e0dcb1604d4833a2ebb1159e1b995c9b6f17492d6fffbd5405cb475cff02ae3e471dac6e2230b7b25377743d1e7538b2c04f3145a84eb2
   languageName: node
   linkType: hard
 
@@ -2719,11 +2719,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:16.3.0":
-  version: 16.3.0
-  resolution: "eslint-config-next@npm:16.3.0"
+"eslint-config-next@npm:16.3.1":
+  version: 16.3.1
+  resolution: "eslint-config-next@npm:16.3.1"
   dependencies:
-    "@next/eslint-plugin-next": "npm:16.3.0"
+    "@next/eslint-plugin-next": "npm:16.3.1"
     eslint-import-resolver-node: "npm:^0.3.6"
     eslint-import-resolver-typescript: "npm:^3.5.2"
     eslint-plugin-import: "npm:^2.32.0"
@@ -2738,7 +2738,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/a77e9a5d6c391ffb50bf861326f74912036ff6512d1c3db669aa09fe74fa3ff539fc4c5f82809dbe39c80a1ca04ab038016db36273b1bf0bb4e889cf2408780b
+  checksum: 10/5f76640c937b2c290dc7ada529380552d72b30a07dc16e4c82848e12af847689617e0c28be1f9fe30860006a1baf767742e1b16d9574ef5800eba22d1c14acb4
   languageName: node
   linkType: hard
 
@@ -3414,10 +3414,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^17.9.0":
-  version: 17.9.0
-  resolution: "globals@npm:17.9.0"
-  checksum: 10/8619386d449e8cbb81e242eced8bca0a42e5c3633a3a35996b8b1618beb17ff9fb33bfe703d60d83d4b7f6f8a996dede4faf02f9e966e50ff895e0cf6122ae15
+"globals@npm:^17.11.0":
+  version: 17.11.0
+  resolution: "globals@npm:17.11.0"
+  checksum: 10/9cff5b8099b585862ab0d31e8b93dc1c3e7b59239dc58b59447a38709715751df8794ee0d28f434f8e421b01aee3cc10051e2455b5c967d960e79f882e68aa0f
   languageName: node
   linkType: hard
 
@@ -5127,14 +5127,14 @@ __metadata:
     "@urql/introspection": "npm:^1.2.1"
     axios: "npm:^1.19.0"
     clsx: "npm:^2.1.1"
-    daisyui: "npm:^5.7.9"
+    daisyui: "npm:^5.7.20"
     dayjs: "npm:^1.11.21"
     eslint: "npm:9.39.1"
-    eslint-config-next: "npm:16.3.0"
+    eslint-config-next: "npm:16.3.1"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.6"
     eslint-plugin-tailwindcss: "npm:^4.2.0"
-    globals: "npm:^17.9.0"
+    globals: "npm:^17.11.0"
     graphql: "npm:^17.0.2"
     iron-session: "npm:^8.0.4"
     lodash: "npm:^4.18.1"
@@ -5147,7 +5147,7 @@ __metadata:
     react: "npm:^19"
     react-dom: "npm:^19.2.8"
     simple-zustand-devtools: "npm:^1.1.0"
-    swr: "npm:^2.5.0"
+    swr: "npm:^2.5.1"
     tailwindcss: "npm:^4.3.3"
     typescript: "npm:^6.0.3"
     urql: "npm:^5.0.3"
@@ -5962,15 +5962,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swr@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "swr@npm:2.5.0"
+"swr@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "swr@npm:2.5.1"
   dependencies:
     dequal: "npm:^2.0.3"
     use-sync-external-store: "npm:^1.6.0"
   peerDependencies:
     react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/a607f098d13494683c9660d678610a87616d2cc131b969f14b5545b7003d99ef2074d84f0d98c6c679536633eb5b4486829e922de8ee9d81d9491d2bb53b1983
+  checksum: 10/7ba8d069bfb2a24a76c4c572c7c517b6365182c35ba10f7ed72f16dc2c038e40cf398b6fa889112c421709df38ae26944f027b529aec133dd43ddf3f1dff19e1
   languageName: node
   linkType: hard
 
