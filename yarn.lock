@@ -2924,9 +2924,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-tailwindcss@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "eslint-plugin-tailwindcss@npm:4.2.0"
+"eslint-plugin-tailwindcss@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "eslint-plugin-tailwindcss@npm:4.4.0"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.37.0"
     postcss: "npm:^8.4.4"
@@ -2939,7 +2939,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/e3f5b7c7d7f43dc639d8c66871f4d5a0353ff28bb6b4f12b1bb09cc7661989707d4e616c16fb326e465ca957966bf1c84a898b4e055ccd1137cb570fc086585a
+  checksum: 10/9d6ba7e2e2c94eeeac70b57def86654e5ce299921280bf2af78d802f3e674c4a314b229036962a1d0c8a7f73fe8aaf6cc3d15903d14803eb5db49c60beca8595
   languageName: node
   linkType: hard
 
@@ -5133,7 +5133,7 @@ __metadata:
     eslint-config-next: "npm:16.3.1"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.6"
-    eslint-plugin-tailwindcss: "npm:^4.2.0"
+    eslint-plugin-tailwindcss: "npm:^4.4.0"
     globals: "npm:^17.11.0"
     graphql: "npm:^17.0.2"
     iron-session: "npm:^8.0.4"
