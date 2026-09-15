@@ -877,13 +877,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:16.3.3":
-  version: 16.3.3
-  resolution: "@next/eslint-plugin-next@npm:16.3.3"
+"@next/eslint-plugin-next@npm:16.3.4":
+  version: 16.3.4
+  resolution: "@next/eslint-plugin-next@npm:16.3.4"
   dependencies:
     "@eslint-community/eslint-utils": "npm:4.9.1"
     fast-glob: "npm:3.3.1"
-  checksum: 10/f61daab987b4930525178c4c1b93e6def4cf0b733834d3b6b90cae9c23f5d16fb6afd9317ffefdef84ce15b415bf2b0d35825ef9853b200656b0cc86dd0ad0ac
+  checksum: 10/09f7b428f9dde0bf671480a152109ad32758bd67e0098b0821df48936114625510f30f4ea3c14bb9f25a0cb5441f51d8c396b1ae41c94cbf9a1dbb39375144d4
   languageName: node
   linkType: hard
 
@@ -1208,12 +1208,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^26.2.0":
-  version: 26.2.0
-  resolution: "@types/node@npm:26.2.0"
+"@types/node@npm:^26.5.1":
+  version: 26.5.1
+  resolution: "@types/node@npm:26.5.1"
   dependencies:
-    undici-types: "npm:~8.3.0"
-  checksum: 10/3829dd8c82e7d4858f3cc946ec9e5133c9fa39a0a9173874a6392230665121b42dac1b134e5e10ee132a5487293708c77df253cf41a125e9fd838cc3af72d700
+    undici-types: "npm:~8.9.0"
+  checksum: 10/5b509d30dc9344c91cba3291acecf6f424320cb763c8192befd50cc8b1a8207dd7dcff8c4f313eea6468e9f2121cc78ffb6affbd7ecd951b4b32e2629ea9856d
   languageName: node
   linkType: hard
 
@@ -2162,10 +2162,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^5.7.20":
-  version: 5.7.20
-  resolution: "daisyui@npm:5.7.20"
-  checksum: 10/88c2fd3fb3027d5a72e0dcb1604d4833a2ebb1159e1b995c9b6f17492d6fffbd5405cb475cff02ae3e471dac6e2230b7b25377743d1e7538b2c04f3145a84eb2
+"daisyui@npm:^5.7.36":
+  version: 5.7.36
+  resolution: "daisyui@npm:5.7.36"
+  checksum: 10/faff4a29f6d8a2d15e4f2d40c34315d5c6f5ffcc3aafe12b8e43633ca65599af92d7fff218b52da4ad99a223f40d9cddbab96117e4a60071475266cb1cf3825d
   languageName: node
   linkType: hard
 
@@ -2754,11 +2754,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:16.3.3":
-  version: 16.3.3
-  resolution: "eslint-config-next@npm:16.3.3"
+"eslint-config-next@npm:16.3.4":
+  version: 16.3.4
+  resolution: "eslint-config-next@npm:16.3.4"
   dependencies:
-    "@next/eslint-plugin-next": "npm:16.3.3"
+    "@next/eslint-plugin-next": "npm:16.3.4"
     eslint-import-resolver-node: "npm:^0.3.6"
     eslint-import-resolver-typescript: "npm:^3.5.2"
     eslint-plugin-import: "npm:^2.32.0"
@@ -2773,7 +2773,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/10c982737b589a6851ef2feab38a34d0a0cabbe26224ef348c4d57a3e9f977c8860de9efd773a69c0269ad76febab30b72fd6e96ce70afb09ea0010781b9cd6c
+  checksum: 10/85e07235b7d39168f5e695ccc89a129fbb3c3bb9881cd60f49673e25f2210debebdcc7b02df33d0e8a414d954bdab964a7cb4a8ae17e56debee49e863691438f
   languageName: node
   linkType: hard
 
@@ -3449,10 +3449,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^17.11.0":
-  version: 17.11.0
-  resolution: "globals@npm:17.11.0"
-  checksum: 10/9cff5b8099b585862ab0d31e8b93dc1c3e7b59239dc58b59447a38709715751df8794ee0d28f434f8e421b01aee3cc10051e2455b5c967d960e79f882e68aa0f
+"globals@npm:^17.12.0":
+  version: 17.12.0
+  resolution: "globals@npm:17.12.0"
+  checksum: 10/833291560517dbb510c6d12359ba87eb8b8f282e9775b0474c6e19e0bea043b61f6b52732d4b1bb275888d1813564e40653e0d5faccef3083dc603cfbf0a3271
   languageName: node
   linkType: hard
 
@@ -5166,7 +5166,7 @@ __metadata:
     "@iconify/tailwind4": "npm:^1.2.3"
     "@tailwindcss/postcss": "npm:^4.3.3"
     "@types/lodash": "npm:^4.17.25"
-    "@types/node": "npm:^26.2.0"
+    "@types/node": "npm:^26.5.1"
     "@types/react": "npm:^19.2.18"
     "@types/react-dom": "npm:^19.2.5"
     "@uidotdev/usehooks": "npm:^2.4.1"
@@ -5174,14 +5174,14 @@ __metadata:
     "@urql/introspection": "npm:^1.2.1"
     axios: "npm:^1.20.0"
     clsx: "npm:^2.1.1"
-    daisyui: "npm:^5.7.20"
+    daisyui: "npm:^5.7.36"
     dayjs: "npm:^1.11.23"
     eslint: "npm:9.39.1"
-    eslint-config-next: "npm:16.3.3"
+    eslint-config-next: "npm:16.3.4"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.6"
     eslint-plugin-tailwindcss: "npm:^4.4.0"
-    globals: "npm:^17.11.0"
+    globals: "npm:^17.12.0"
     graphql: "npm:^17.0.2"
     iron-session: "npm:^9.0.1"
     lodash: "npm:^4.18.1"
@@ -6383,10 +6383,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~8.3.0":
-  version: 8.3.0
-  resolution: "undici-types@npm:8.3.0"
-  checksum: 10/6681d2837ac75a75ac1cc46090aa2b8ddc7c6b8ecc295a6cdb06838752a730da3d8afeecf05e5ab7903160eafad3a8b6ffa1927e5ded260590f4d4fef18646d5
+"undici-types@npm:~8.9.0":
+  version: 8.9.0
+  resolution: "undici-types@npm:8.9.0"
+  checksum: 10/8785591929de2b71d281c684e915c4a8c41becc225adbf42a3e89148f8b384724a21533494c30a1cbb85b4cbccd088d020788ff4f2d605013eb2863cd47a1639
   languageName: node
   linkType: hard
 
