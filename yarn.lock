@@ -4274,10 +4274,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kareem@npm:3.3.0":
-  version: 3.3.0
-  resolution: "kareem@npm:3.3.0"
-  checksum: 10/28fa51f594531ddf88b00e421156fd6e2b4d3c0fe069f908cc705587a2c3ba55ac90c7dbe6ffd867259b9116efcf0d3efdaab7b6a9ad711259d186c88ac18393
+"kareem@npm:3.4.0":
+  version: 3.4.0
+  resolution: "kareem@npm:3.4.0"
+  checksum: 10/b62b85a156ff8ade0ec3535e4be78423a7af3183bc419530f1b0243813b047eb8321ec32c7cd3fbb43e627ccc8562af850c441ec5eaa2b8f8cc32236e807e342
   languageName: node
   linkType: hard
 
@@ -4614,9 +4614,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:~7.5":
-  version: 7.5.0
-  resolution: "mongodb@npm:7.5.0"
+"mongodb@npm:~7.6":
+  version: 7.6.0
+  resolution: "mongodb@npm:7.6.0"
   dependencies:
     "@mongodb-js/saslprep": "npm:^1.4.11"
     bson: "npm:^7.2.0"
@@ -4644,22 +4644,22 @@ __metadata:
       optional: true
     socks:
       optional: true
-  checksum: 10/7cd86a9d5c7cd8a525082920101de54155470ad1dcd0575a2aefb8d3a7f9b68f7d82f851ddeb6e6f49d915e876d9e8fcc120a1f74c55de68c07257e19eb84423
+  checksum: 10/6547b295102d629d3163de2aa08f34cb5a36f7ae4bda88af6969a9e3fbee900e40ae9fda4888b33051e58e2154a147e9b4b97bcb81456e8e12d0fa7f8170a593
   languageName: node
   linkType: hard
 
-"mongoose@npm:^9.9.4":
-  version: 9.9.4
-  resolution: "mongoose@npm:9.9.4"
+"mongoose@npm:^9.10.0":
+  version: 9.10.0
+  resolution: "mongoose@npm:9.10.0"
   dependencies:
     "@standard-schema/spec": "npm:^1.1.0"
-    kareem: "npm:3.3.0"
-    mongodb: "npm:~7.5"
+    kareem: "npm:3.4.0"
+    mongodb: "npm:~7.6"
     mpath: "npm:0.9.0"
     mquery: "npm:6.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10/a8ce40d12c79ee2dd2ec1689dc4167d8cb77cb277e216ae17d55a3c0f567e5ea51931d56cf62a67c1128459385b58b57d8fc164dd10731ab9d35753c749fb2df
+  checksum: 10/2e242711736201aaeea8dc3d189bb92b0bd262f2eeaadd8f7ea1d31449fd03ac4647e0b3ca6d447a01c04530826cb2b7a41ea41386eef15ec60cca8fd683851f
   languageName: node
   linkType: hard
 
@@ -5185,7 +5185,7 @@ __metadata:
     graphql: "npm:^17.0.2"
     iron-session: "npm:^9.0.1"
     lodash: "npm:^4.18.1"
-    mongoose: "npm:^9.9.4"
+    mongoose: "npm:^9.10.0"
     next: "npm:16.3.3"
     next-connect: "npm:^1.0.0"
     oauth-pkce: "npm:^0.0.7"
