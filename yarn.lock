@@ -326,9 +326,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/compat@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@eslint/compat@npm:2.1.0"
+"@eslint/compat@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@eslint/compat@npm:2.1.1"
   dependencies:
     "@eslint/core": "npm:^1.2.1"
   peerDependencies:
@@ -336,7 +336,7 @@ __metadata:
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: 10/e868afc209242b168e287ede744f52c4158cec3fb61dd269d88df919ee812f1d08ec09075bb74d2e130a4f8fc1768bbb2fd151d3da43e88987c3df1633255190
+  checksum: 10/7749ad710b787bd4a37949f5a0051120b08e313d17bb1b4203e60f7c6500f1194aa55a6e85b329441d0b5102d077a4f8c9898d84feef7e468cec7f106c299811
   languageName: node
   linkType: hard
 
@@ -498,12 +498,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/simple-icons@npm:^1.2.95":
-  version: 1.2.95
-  resolution: "@iconify-json/simple-icons@npm:1.2.95"
+"@iconify-json/simple-icons@npm:^1.2.96":
+  version: 1.2.96
+  resolution: "@iconify-json/simple-icons@npm:1.2.96"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/aeebf287238f495ada317072ccf7483034547a938283c86ad7e8a7fd8b8945642d4a00bffc14b31dbfc5d25d38643ea88a92c4e7de6d2ee2a32b53543b123422
+  checksum: 10/410d559384ee693ed6d746117b4467b11028bd909607a325dcbfa64443d1216285165f3a471ec4bd145f4a15a32cc0db02a64c2a2a427352bf2dc6adde29c6ab
   languageName: node
   linkType: hard
 
@@ -2162,10 +2162,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^5.7.37":
-  version: 5.7.37
-  resolution: "daisyui@npm:5.7.37"
-  checksum: 10/d6df08da16044463d86406d548ac1a9d09434525c0be715d1b271d0c5cd8308ebc88b9b7c417ecb1a1a09b0b1fdc1496b7e49300ccb1525b4fbe4b7d3af1c556
+"daisyui@npm:^5.7.38":
+  version: 5.7.38
+  resolution: "daisyui@npm:5.7.38"
+  checksum: 10/2bed454f1ddafb8602678086bd8ae53ae32d02a5f09c27ee101bfd31c756e1c80df3909117ea86eaec869ce859ea204f1cc83a61a6bcdeeb613ddc133e7ba7d7
   languageName: node
   linkType: hard
 
@@ -4274,10 +4274,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kareem@npm:3.3.0":
-  version: 3.3.0
-  resolution: "kareem@npm:3.3.0"
-  checksum: 10/28fa51f594531ddf88b00e421156fd6e2b4d3c0fe069f908cc705587a2c3ba55ac90c7dbe6ffd867259b9116efcf0d3efdaab7b6a9ad711259d186c88ac18393
+"kareem@npm:3.4.0":
+  version: 3.4.0
+  resolution: "kareem@npm:3.4.0"
+  checksum: 10/b62b85a156ff8ade0ec3535e4be78423a7af3183bc419530f1b0243813b047eb8321ec32c7cd3fbb43e627ccc8562af850c441ec5eaa2b8f8cc32236e807e342
   languageName: node
   linkType: hard
 
@@ -4614,9 +4614,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:~7.5":
-  version: 7.5.0
-  resolution: "mongodb@npm:7.5.0"
+"mongodb@npm:~7.6":
+  version: 7.6.0
+  resolution: "mongodb@npm:7.6.0"
   dependencies:
     "@mongodb-js/saslprep": "npm:^1.4.11"
     bson: "npm:^7.2.0"
@@ -4644,22 +4644,22 @@ __metadata:
       optional: true
     socks:
       optional: true
-  checksum: 10/7cd86a9d5c7cd8a525082920101de54155470ad1dcd0575a2aefb8d3a7f9b68f7d82f851ddeb6e6f49d915e876d9e8fcc120a1f74c55de68c07257e19eb84423
+  checksum: 10/6547b295102d629d3163de2aa08f34cb5a36f7ae4bda88af6969a9e3fbee900e40ae9fda4888b33051e58e2154a147e9b4b97bcb81456e8e12d0fa7f8170a593
   languageName: node
   linkType: hard
 
-"mongoose@npm:^9.9.4":
-  version: 9.9.4
-  resolution: "mongoose@npm:9.9.4"
+"mongoose@npm:^9.10.1":
+  version: 9.10.1
+  resolution: "mongoose@npm:9.10.1"
   dependencies:
     "@standard-schema/spec": "npm:^1.1.0"
-    kareem: "npm:3.3.0"
-    mongodb: "npm:~7.5"
+    kareem: "npm:3.4.0"
+    mongodb: "npm:~7.6"
     mpath: "npm:0.9.0"
     mquery: "npm:6.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10/a8ce40d12c79ee2dd2ec1689dc4167d8cb77cb277e216ae17d55a3c0f567e5ea51931d56cf62a67c1128459385b58b57d8fc164dd10731ab9d35753c749fb2df
+  checksum: 10/d7a456c8f3cb3c13b90fd404c52315400d9a351d8a24cb94a2c7a220fc2cebf702ba75bf5aff7b68cefb718083027ec798f09a89a2849e06f4b307de8cb09faa
   languageName: node
   linkType: hard
 
@@ -5158,11 +5158,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "project-azunyan@workspace:."
   dependencies:
-    "@eslint/compat": "npm:^2.1.0"
+    "@eslint/compat": "npm:^2.1.1"
     "@eslint/eslintrc": "npm:^3.3.7"
     "@eslint/js": "npm:^10.0.1"
     "@iconify-json/mdi": "npm:^1.2.3"
-    "@iconify-json/simple-icons": "npm:^1.2.95"
+    "@iconify-json/simple-icons": "npm:^1.2.96"
     "@iconify/tailwind4": "npm:^1.2.3"
     "@tailwindcss/postcss": "npm:^4.3.3"
     "@types/lodash": "npm:^4.17.25"
@@ -5174,7 +5174,7 @@ __metadata:
     "@urql/introspection": "npm:^1.2.1"
     axios: "npm:^1.20.0"
     clsx: "npm:^2.1.1"
-    daisyui: "npm:^5.7.37"
+    daisyui: "npm:^5.7.38"
     dayjs: "npm:^1.11.23"
     eslint: "npm:9.39.1"
     eslint-config-next: "npm:16.3.5"
@@ -5185,7 +5185,7 @@ __metadata:
     graphql: "npm:^17.0.2"
     iron-session: "npm:^9.0.1"
     lodash: "npm:^4.18.1"
-    mongoose: "npm:^9.9.4"
+    mongoose: "npm:^9.10.1"
     next: "npm:16.3.3"
     next-connect: "npm:^1.0.0"
     oauth-pkce: "npm:^0.0.7"
