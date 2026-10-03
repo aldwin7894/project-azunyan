@@ -25,7 +25,7 @@ function Auth() {
     };
 
     if (!run.current) {
-      saveMalUser();
+      void saveMalUser();
     }
   }, [params, router]);
 

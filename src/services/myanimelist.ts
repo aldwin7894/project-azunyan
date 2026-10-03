@@ -35,9 +35,8 @@ export const authorizeMAL = async (
   params.append("code", authorization_token);
   params.append("code_verifier", code_verifier);
 
-  return client
-    .post("/oauth2/token", params)
-    .then(res => res.data as TMALAuthResponse);
+  const res = await client.post("/oauth2/token", params);
+  return res.data as TMALAuthResponse;
 };
 
 export const refreshMALToken = async (
@@ -62,9 +61,8 @@ export const refreshMALToken = async (
   params.append("grant_type", "refresh_token");
   params.append("refresh_token", refresh_token);
 
-  return client
-    .post("/oauth2/token", params)
-    .then(res => res.data as TMALAuthResponse);
+  const res = await client.post("/oauth2/token", params);
+  return res.data as TMALAuthResponse;
 };
 
 export const getMALUserDetails = async (client: AxiosInstance) => {

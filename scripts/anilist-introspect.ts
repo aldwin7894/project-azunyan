@@ -6,7 +6,7 @@ import {
   minifyIntrospectionQuery,
 } from "@urql/introspection";
 
-await fetch("https://graphql.anilist.co", {
+fetch("https://graphql.anilist.co", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
@@ -25,4 +25,5 @@ await fetch("https://graphql.anilist.co", {
       includeInputs: true,
     });
     fs.writeFileSync("./anilist-schema.json", JSON.stringify(minified));
-  });
+  })
+  .catch(err => console.error(err));

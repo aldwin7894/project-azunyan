@@ -48,7 +48,7 @@ export default forwardRef(function SearchModal(
       onClose={onClose}
     >
       <form method="dialog" className="modal-backdrop">
-        <button>close</button>
+        <button type="submit">close</button>
       </form>
 
       <div className="modal-box relative max-w-4xl p-0 max-md:h-[85vh] md:mt-[10vh] md:h-[clamp(13rem,80vh,80vh)] md:w-11/12">

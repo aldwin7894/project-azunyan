@@ -21,6 +21,7 @@ const compat = new FlatCompat({
 export default defineConfig([
   ...nextVitals,
   ...nextTs,
+  tailwindcss.configs.recommended,
   prettierConfig,
   globalIgnores([
     "**/*.config.mjs",
@@ -31,13 +32,16 @@ export default defineConfig([
     "next-env.d.ts",
   ]),
   {
+    settings: {
+      tailwindcss: {
+        cssConfigPath: "./src/app/globals.css",
+      }
+    },
     extends: compat.extends(
       "eslint:recommended",
-      "plugin:tailwindcss/recommended",
       "plugin:prettier/recommended",
     ),
     plugins: {
-      tailwindcss,
       prettier,
     },
     languageOptions: {

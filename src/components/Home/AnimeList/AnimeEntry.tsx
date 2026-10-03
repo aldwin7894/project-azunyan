@@ -55,35 +55,35 @@ export default function AnimeEntry({
   return (
     <>
       <div key={id} className="group flex flex-col items-center">
-        <div className="relative h-[326px] w-[230px] overflow-hidden rounded-md">
+        <div className="relative h-81.5 w-57.5 overflow-hidden rounded-md">
           <Image
             loading="eager"
             src={image}
-            fill={true}
             alt={title}
+            fill
             sizes="230px"
             quality={100}
             className="absolute top-0 left-0 size-full object-cover object-center"
           />
           <button
-            className="bg-primary/90 invisible absolute top-3 right-3 flex items-center rounded-md text-white group-hover:visible"
+            className="invisible absolute top-3 right-3 flex items-center rounded-md bg-primary/90 text-white group-hover:visible"
             onClick={() => editModal.current?.showModal()}
           >
-            <span className="icon-[mdi--dots-horizontal] z-2 size-8"></span>
+            <span className="z-2 icon-[mdi--dots-horizontal] size-8"></span>
           </button>
-          <h1 className="bg-neutral/80 absolute bottom-0 left-0 z-1 w-full p-3 pb-9 text-white">
-            {title}
-          </h1>
-          <h1 className="text-primary absolute bottom-0 left-0 z-2 p-3 font-semibold">
+          <div className="absolute bottom-0 left-0 w-full bg-neutral/80 p-3 pb-9">
+            <h1 className="line-clamp-3 font-semibold text-white">{title}</h1>
+          </div>
+          <h1 className="absolute bottom-0 left-0 z-2 p-3 font-semibold text-primary">
             {currentProgress} / {totalEpisodes}
             <button
-              className="invisible ml-1 group-hover:visible"
-              onClick={() => showSearchModal("mal")}
+              className="invisible ml-1 cursor-pointer group-hover:visible"
+              onClick={() => episodeModal.current?.showModal()}
             >
               +
             </button>
           </h1>
-          <h1 className="text-primary absolute right-0 bottom-0 z-2 p-3 font-semibold">
+          <h1 className="absolute right-0 bottom-0 z-2 p-3 font-semibold text-primary">
             {rating}
           </h1>
         </div>
@@ -96,14 +96,14 @@ export default function AnimeEntry({
         onSave={handleUpdateMapping}
         headerImage={bannerImage}
       >
-        <div className="absolute top-20 left-7">
+        <div className="absolute top-20 left-7 h-81.5 w-57.5 overflow-hidden rounded-md">
           <Image
-            loading="lazy"
+            loading="eager"
             src={image}
             alt={title}
             quality={100}
-            width={230}
-            height={326}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="sticky rounded-xs"
           />
         </div>
@@ -143,7 +143,7 @@ export default function AnimeEntry({
             actions={
               <Link
                 href={`https://anilist.co/anime/${id}`}
-                className="btn btn-secondary flex items-center"
+                className="btn flex items-center btn-secondary"
                 target="_blank"
               >
                 <span>View</span>

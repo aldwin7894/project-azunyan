@@ -24,16 +24,15 @@ export const authorizeSimkl = async (
     grant_type: "authorization_code",
   };
 
-  return SimklClient()
-    .post("/oauth/token", params)
-    .then(res => res.data);
+  const res = await SimklClient().post("/oauth/token", params);
+  return res.data as TSimklAuthResponse;
 };
 
 export const getSimklUserDetails = async (
   client: AxiosInstance,
 ): Promise<TSimklUserDetailsResponse> => {
   const res = await client.get("/users/settings");
-  return res.data;
+  return res.data as TSimklUserDetailsResponse;
 };
 
 export default SimklClient;

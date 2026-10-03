@@ -26,7 +26,7 @@ function Auth() {
     };
 
     if (!run.current) {
-      saveAnilistUser();
+      void saveAnilistUser();
     }
   }, [router]);
 

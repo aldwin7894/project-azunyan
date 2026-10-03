@@ -25,7 +25,7 @@ function Auth() {
     };
 
     if (!run.current) {
-      saveTraktUser();
+      void saveTraktUser();
     }
   }, [params, router]);
 

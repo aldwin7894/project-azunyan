@@ -10,7 +10,7 @@ export default async function UserHeader() {
     return (
       <Link
         href={`https://anilist.co/api/v2/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_ANILIST_CLIENT_ID}&response_type=token`}
-        className="btn btn-primary flex items-center text-white"
+        className="btn flex items-center text-white btn-primary"
       >
         <span className="icon-[simple-icons--anilist] size-5" />
         <span>Login</span>
@@ -20,7 +20,10 @@ export default async function UserHeader() {
 
   return (
     <div className="dropdown dropdown-end">
-      <button tabIndex={0} className="avatar btn btn-circle btn-ghost">
+      <button
+        tabIndex={0}
+        className="btn avatar btn-circle btn-ghost hover:bg-transparent"
+      >
         <Image
           alt="Avatar"
           src={user.anilist.account_details.avatar.medium}

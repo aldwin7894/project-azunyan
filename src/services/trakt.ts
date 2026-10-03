@@ -25,13 +25,12 @@ export const authorizeTrakt = async (
     grant_type: "authorization_code",
   };
 
-  return TraktClient()
-    .post("/oauth/token", params)
-    .then(res => res.data);
+  const res = await TraktClient().post("/oauth/token", params);
+  return res.data as TTraktAuthResponse;
 };
 
 export const refreshTraktToken = async (
-  access_token: string,
+  _access_token: string,
   refresh_token: string,
 ) => {
   const params = new URLSearchParams();
@@ -44,9 +43,8 @@ export const refreshTraktToken = async (
   params.append("refresh_token", refresh_token);
   params.append("redirect_uri", `${process.env.NEXT_PUBLIC_HOST}/trakt/auth`);
 
-  return TraktClient()
-    .post("/oauth/token", params)
-    .then(res => res.data as TTraktAuthResponse);
+  const res = await TraktClient().post("/oauth/token", params);
+  return res.data as TTraktAuthResponse;
 };
 
 export const getTraktUserDetails = async (

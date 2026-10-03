@@ -102,7 +102,7 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
             ) : (
               <Link
                 href="#"
-                className="btn btn-primary flex items-center text-white"
+                className="btn flex items-center text-white btn-primary"
                 onClick={redirectToMalAuth}
               >
                 <span>Login</span>
@@ -123,7 +123,7 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
             ) : (
               <Link
                 href="#"
-                className="btn btn-primary flex items-center text-white"
+                className="btn flex items-center text-white btn-primary"
                 onClick={redirectToSimklAuth}
               >
                 <span>Login</span>
@@ -144,7 +144,7 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
             ) : (
               <Link
                 href="#"
-                className="btn btn-primary flex items-center text-white"
+                className="btn flex items-center text-white btn-primary"
                 onClick={redirectToTraktAuth}
               >
                 <span>Login</span>
@@ -154,16 +154,14 @@ export default function UserMenu({ session, user }: Readonly<TProps>) {
         </div>
       </Modal>
 
-      <ul className="menu dropdown-content menu-sm rounded-box bg-base-300 z-1 mt-3 w-52 p-2 shadow-sm">
+      <ul className="menu dropdown-content z-1 mt-3 w-52 menu-sm rounded-box bg-base-300 p-2 shadow-sm">
         <li>
-          <a onClick={() => settingsModal.current?.showModal()} href="#">
+          <button onClick={() => settingsModal.current?.showModal()}>
             Settings
-          </a>
+          </button>
         </li>
         <li>
-          <a onClick={handleLogout} href="#">
-            Logout
-          </a>
+          <button onClick={handleLogout}>Logout</button>
         </li>
       </ul>
     </>
