@@ -488,12 +488,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/simple-icons@npm:^1.2.100":
-  version: 1.2.100
-  resolution: "@iconify-json/simple-icons@npm:1.2.100"
+"@iconify-json/simple-icons@npm:^1.2.101":
+  version: 1.2.101
+  resolution: "@iconify-json/simple-icons@npm:1.2.101"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/74b67d2611cb80c8feab85b964518d3071d4e4ad6aa13d60be183601ed439f79b90eabe2ca206e721b36cbf9b93bd645a4a1fa9cdc90e7cc5e5f5bf8d602b2a7
+  checksum: 10/1046d53cee22768d241a682c0ff7baf52e8ef2e780fcd7be5364e92761b446cee24325dc99b4c72d85d459d8e5befdd34f7ad8c6c40ba2c4796ac2ccfa5fec1a
   languageName: node
   linkType: hard
 
@@ -1198,12 +1198,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^26.6.5":
-  version: 26.6.5
-  resolution: "@types/node@npm:26.6.5"
+"@types/node@npm:^26.6.6":
+  version: 26.6.6
+  resolution: "@types/node@npm:26.6.6"
   dependencies:
     undici-types: "npm:~8.9.0"
-  checksum: 10/03780cc68280b566af47c0f673318e665258dbdcc953737a83c11593424d55aecb8b2642a573da33f76cb4dd5457379548388b78ab284cb3b762030e5d58b252
+  checksum: 10/07c6c6fc1f5cc89c700ac9ebcebd42b000fef234bf0b80e9461a8f077105f15faf16df95b83745e0c0e37338d1fbc28cb402ef27b5787fd7a57b492c926ff7ae
   languageName: node
   linkType: hard
 
@@ -1809,15 +1809,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.20.0":
-  version: 1.20.0
-  resolution: "axios@npm:1.20.0"
+"axios@npm:^1.21.0":
+  version: 1.21.0
+  resolution: "axios@npm:1.21.0"
   dependencies:
     follow-redirects: "npm:^1.16.0"
     form-data: "npm:^4.0.6"
     https-proxy-agent: "npm:^5.0.1"
     proxy-from-env: "npm:^2.1.0"
-  checksum: 10/0376b6178baecbe0f5d36088f5b5f6c21362ce301e0731f77172f9c89be740bdee20d8ae6ab186340d7cb752020c6a4f1381290e5a5cd10f6f9003941615ac77
+  checksum: 10/1d350436e2bcda52ea62607452bbefa17fa04c43192ecb989d5650215306f9aabfd98bbd1690fcf24ee4c9587630af2e7795feab4e7931f80c43ddd6eceeecc9
   languageName: node
   linkType: hard
 
@@ -4638,18 +4638,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:^9.11.3":
-  version: 9.11.3
-  resolution: "mongoose@npm:9.11.3"
+"mongoose@npm:^9.11.4":
+  version: 9.11.4
+  resolution: "mongoose@npm:9.11.4"
   dependencies:
     "@standard-schema/spec": "npm:^1.1.0"
     kareem: "npm:3.4.1"
     mongodb: "npm:~7.7"
     mpath: "npm:0.9.0"
-    mquery: "npm:6.0.0"
+    mquery: "npm:6.0.1"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10/5ba9aa7daeb5cba3c3098527bd257a77dfc23e05844f5069027845a52e35f0fbc190c0b9c6e54d5d0cbbc2291d089265cb0afab82efea8589d2c7ea5c6f88966
+  checksum: 10/88264f2a54dfe9c4bcca0e3ec3237fc5abb5feaf9b7acf5f9bdac547eac1782de6dbcd869b2f91d267128466a31a05559d7a9969c6e183f98b751f73534864f8
   languageName: node
   linkType: hard
 
@@ -4660,10 +4660,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mquery@npm:6.0.0":
-  version: 6.0.0
-  resolution: "mquery@npm:6.0.0"
-  checksum: 10/79f0f8361f701e422fb7f179c0bf3d1c0a22d4da9893b6aa1e09e331455c18ad4c6023909c2ad9a6a23d9be0e634fef9790eaffe0c461543a1338e1d7b9a4a83
+"mquery@npm:6.0.1":
+  version: 6.0.1
+  resolution: "mquery@npm:6.0.1"
+  checksum: 10/f354a092a13e0f845494d59a8b4380ef4aa7ecfcbb7767a05cdd84c555fc732e61d5dc284ecadeb2f511729ce00e939bd5806b6655f64adc0dba0158eab2ce4a
   languageName: node
   linkType: hard
 
@@ -5117,14 +5117,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.31":
-  version: 8.5.31
-  resolution: "postcss@npm:8.5.31"
+"postcss@npm:^8.5.32":
+  version: 8.5.32
+  resolution: "postcss@npm:8.5.32"
   dependencies:
     nanoid: "npm:^3.3.20"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.2"
-  checksum: 10/d2a3415681570c4687cbb34d7a9cdb570619da73b764229260f7c7337d2359cffa1045f4081a4599bd0b9320bd23b05f9915057f7b13ad9534b0121c2e9de564
+  checksum: 10/c86fd279d9f29d34bbec6482e01f54effe00eaf8f4dadbe17f8345d11eac68439da45d642b04bfb5d704886f665d2c31f9a0904f2a3f1b9f8098ee0894f76cea
   languageName: node
   linkType: hard
 
@@ -5161,17 +5161,17 @@ __metadata:
     "@eslint/eslintrc": "npm:^3.3.7"
     "@eslint/js": "npm:^10.0.1"
     "@iconify-json/mdi": "npm:^1.2.3"
-    "@iconify-json/simple-icons": "npm:^1.2.100"
+    "@iconify-json/simple-icons": "npm:^1.2.101"
     "@iconify/tailwind4": "npm:^1.2.3"
     "@tailwindcss/postcss": "npm:^4.3.3"
     "@types/lodash": "npm:^4.17.27"
-    "@types/node": "npm:^26.6.5"
+    "@types/node": "npm:^26.6.6"
     "@types/react": "npm:^19.3.0"
     "@types/react-dom": "npm:^19.3.0"
     "@uidotdev/usehooks": "npm:^2.4.1"
     "@urql/exchange-graphcache": "npm:^9.0.2"
     "@urql/introspection": "npm:^1.2.1"
-    axios: "npm:^1.20.0"
+    axios: "npm:^1.21.0"
     clsx: "npm:^2.1.1"
     daisyui: "npm:^5.7.50"
     dayjs: "npm:^1.11.23"
@@ -5184,11 +5184,11 @@ __metadata:
     graphql: "npm:^17.0.2"
     iron-session: "npm:^9.0.1"
     lodash: "npm:^4.18.1"
-    mongoose: "npm:^9.11.3"
+    mongoose: "npm:^9.11.4"
     next: "npm:16.4.3"
     next-connect: "npm:^1.0.0"
     oauth-pkce: "npm:^0.0.7"
-    postcss: "npm:^8.5.31"
+    postcss: "npm:^8.5.32"
     prettier: "npm:^3.9.10"
     react: "npm:^19.3.1"
     react-dom: "npm:^19.3.1"
