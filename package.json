@@ -35,7 +35,7 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.101",
     "@iconify/tailwind4": "^1.2.3",
-    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/postcss": "^4.3.4",
     "@types/lodash": "^4.17.27",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
