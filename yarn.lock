@@ -479,12 +479,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/simple-icons@npm:^1.2.102":
-  version: 1.2.102
-  resolution: "@iconify-json/simple-icons@npm:1.2.102"
+"@iconify-json/simple-icons@npm:^1.2.103":
+  version: 1.2.103
+  resolution: "@iconify-json/simple-icons@npm:1.2.103"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/68e13edffba749b5573fe0ac7f56f9dff9925062b7de99104ab21bc1f25ac854ec142161e19002056880b94e07721b20756caee430d8445bc3a79fddbde04ec6
+  checksum: 10/4e1036969d89b628ba73c5e711874cc2215ccf3634b0a7209a9c9fe7047ec6725ae0628e4ea9f2f152424e0bcf0e570220640c64af050f6b8044aa1c00923733
   languageName: node
   linkType: hard
 
@@ -5156,7 +5156,7 @@ __metadata:
     "@eslint/eslintrc": "npm:^3.3.7"
     "@eslint/js": "npm:^10.0.1"
     "@iconify-json/mdi": "npm:^1.2.3"
-    "@iconify-json/simple-icons": "npm:^1.2.102"
+    "@iconify-json/simple-icons": "npm:^1.2.103"
     "@iconify/tailwind4": "npm:^1.2.3"
     "@tailwindcss/postcss": "npm:^4.3.5"
     "@types/lodash": "npm:^4.17.27"
