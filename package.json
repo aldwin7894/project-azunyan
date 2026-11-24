@@ -41,7 +41,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@urql/introspection": "^1.2.1",
-    "daisyui": "^5.8.0",
+    "daisyui": "^5.8.2",
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.6",
     "eslint-config-prettier": "^10.1.8",
