@@ -3704,13 +3704,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iron-session@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "iron-session@npm:9.1.0"
+"iron-session@npm:^9.1.1":
+  version: 9.1.1
+  resolution: "iron-session@npm:9.1.1"
   dependencies:
     cookie: "npm:^2.0.1"
     iron-webcrypto: "npm:^2.0.0"
-  checksum: 10/276802336ea24c98cc3cffd46ce68fc8463d94d12ef8f6a6328a81a320ac25cda604dbef5fda02acd893e1cc0d2a2aa964f4f91729da663cd6e3cdd39aa5922c
+  checksum: 10/89a109ba5730c0636c749003fc131c9ef31bcd327d6ff5e32f09aa5086696825cd36a33c9e5b848b3ec0d6698f25db995e661eb0ae52bc7f2b48673117fe9281
   languageName: node
   linkType: hard
 
@@ -5188,7 +5188,7 @@ __metadata:
     eslint-plugin-tailwindcss: "npm:^4.4.0"
     globals: "npm:^17.14.0"
     graphql: "npm:^17.1.0"
-    iron-session: "npm:^9.1.0"
+    iron-session: "npm:^9.1.1"
     lodash: "npm:^4.18.1"
     mongoose: "npm:^9.12.3"
     next: "npm:16.4.6"
